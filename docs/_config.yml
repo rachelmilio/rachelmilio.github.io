@@ -30,7 +30,7 @@ url: "https://rachelmilio.github.io" # the base hostname & protocol for your sit
 github_username:  rachelmilio
 
 # Build settings
-remote_theme: pages-themes/dinky@v0.2.0
+theme: jekyll-theme-dinky
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
