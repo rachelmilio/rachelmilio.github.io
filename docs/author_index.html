@@ -1,0 +1,155 @@
+---
+title: Author Index
+layout: page
+permalink: /author-index
+---
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Author Entity Index</title>
+    <style>
+        body { font-family: "New Athena Unicode", "Cardo", "Palatino Linotype", serif; }
+            .author-index { max-width: 800px; margin: 0 auto; padding: 1rem; }
+            .author-card { 
+                border: 1px solid #e0e0e0; 
+                margin: 1.5rem 0; 
+                padding: 1.5rem;
+                border-radius: 8px;
+                background: #fafafa;
+            }
+            .name-en {
+                font-size: 1.8em; 
+                font-weight: bold; 
+                margin: 0 0 0.5rem 0;
+                color: #2c3e50;
+            }
+            .name-grc { 
+                font-style: italic; 
+                color: #7f8c8d;
+                font-size: 1.2em;
+                margin: 0 0 .3rem 0;
+            }
+            .index-header { 
+                text-align: center; 
+                margin-bottom: 1rem;
+                font-size: 1.2em;
+                border-bottom: 2px solid #34495e;
+                padding-bottom: 1rem;
+            }
+            .author-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1.5rem;
+                margin-top: 2rem;
+            }
+        </style>
+</head>
+<body>
+    <div class='author-index'>
+        <div class='index-header'>
+            <p>Total author entities: 11</p>
+        </div>
+            <input type="text" id="searchBox" placeholder="Search authors..." onkeyup="searchAuthors()">
+        <div class='author-grid'>
+            
+    <div class="author-card" id="aeschines">
+        <a href="/person-index/aeschines">
+        <div class="name-grc">Αἰσχίνης</div>
+        <div class="name-en">Aeschines</div>
+        </a>
+    </div>
+    
+
+    <div class="author-card" id="andocides">
+        <a href="/person-index/andocides">
+        <div class="name-grc">Ἀνδοκίδης</div>
+        <div class="name-en">Andocides</div>
+        </a>
+    </div>
+    
+
+    <div class="author-card" id="antiphon">
+        <a href="/person-index/antiphon">
+        <div class="name-grc">Ἀντιφῶν</div>
+        <div class="name-en">Antiphon</div>
+        </a>
+    </div>
+    
+
+    <div class="author-card" id="apollodorus">
+        <a href="/person-index/apollodorus">
+        <div class="name-grc">Ἀπολλόδωρος</div>
+        <div class="name-en">Apollodorus</div>
+        </a>
+    </div>
+    
+
+    <div class="author-card" id="demosthenes">
+        <a href="/person-index/demosthenes">
+        <div class="name-grc">Δημοσθένης</div>
+        <div class="name-en">Demosthenes</div>
+        </a>
+    </div>
+    
+
+    <div class="author-card" id="dinarchus">
+        <a href="/person-index/dinarchus">
+        <div class="name-grc">Δείναρχος</div>
+        <div class="name-en">Dinarchus</div>
+        </a>
+    </div>
+    
+
+    <div class="author-card" id="hyperides">
+        <a href="/person-index/hyperides">
+        <div class="name-grc">Ὑπερείδης</div>
+        <div class="name-en">Hyperides</div>
+        </a>
+    </div>
+    
+
+    <div class="author-card" id="isaeus">
+        <a href="/person-index/isaeus">
+        <div class="name-grc">Ἰσαῖος</div>
+        <div class="name-en">Isaeus</div>
+        </a>
+    </div>
+    
+
+    <div class="author-card" id="isocrates">
+        <a href="/person-index/isocrates">
+        <div class="name-grc">Ἰσοκράτης</div>
+        <div class="name-en">Isocrates</div>
+        </a>
+    </div>
+    
+
+    <div class="author-card" id="lycurgus">
+        <a href="/person-index/lycurgus">
+        <div class="name-grc">Λυκοῦργος</div>
+        <div class="name-en">Lycurgus</div>
+        </a>
+    </div>
+    
+
+    <div class="author-card" id="lysias">
+        <a href="/person-index/lysias">
+        <div class="name-grc">Λυσίας</div>
+        <div class="name-en">Lysias</div>
+        </a>
+    </div>
+    
+        </div>
+                <script>
+function searchPersons() {
+    const searchTerm = document.getElementById('searchBox').value.toLowerCase();
+    const cards = document.querySelectorAll('.author-card');
+    
+    cards.forEach(card => {
+        const text = card.textContent.toLowerCase();
+        card.style.display = text.includes(searchTerm) ? 'block' : 'none';
+    });
+}
+</script>
+</body>
+</html>

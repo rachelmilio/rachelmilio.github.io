@@ -1,0 +1,146 @@
+---
+layout: page
+title: Andocides
+permalink: /person-index/andocides
+exclude: true
+---
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: "New Athena Unicode", "Cardo", "Palatino Linotype", serif; }
+        .name-grc { 
+                font-style: italic; 
+                color: #34495e;
+                font-size: 1.7em;
+                margin: 0 0 .1rem 0;
+                text-align: center;
+                border-bottom: 2px solid #34495e;
+                padding-bottom: 1rem;
+            }
+        .person-meta { 
+                color: #131313; 
+                margin: 0.5rem 0;
+                font-size: 1.3em;
+            }
+        .author-card {
+            border: 1px solid #e0e0e0; 
+            margin: 1.5rem 0; 
+            padding: 1.5rem;
+            border-radius: 8px;
+            background: #fafafa;
+        }
+        .collapsible {
+            border: 1px solid #e0e0e0; 
+            margin: 1.5rem 0; 
+            padding: 1rem;
+            border-radius: 8px;
+            background: #fafafa;
+            cursor: pointer;
+            width: 100%;
+            text-align: left;
+            outline: none;
+            font-size: 1.3em;
+            font-family: "New Athena Unicode", "Cardo", "Palatino Linotype", serif;
+        }
+        .active, .collapsible:hover {
+            background-color: #293c4e;
+        }
+        .content {
+            padding: 1em;
+            margin: 1em;
+            display: none;
+            overflow: hidden;
+            background-color: #f1f1f1;
+        }
+        .authorship { 
+                text-align: center; 
+                margin: 1rem;
+                font-size: 1.5em;
+                padding-bottom: 1rem;
+                border-bottom: 2px solid #34495e;
+        }
+        .author-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+        .author-info {
+            color: #34495e;
+            font-size: 1.4em;
+            margin: 0 0 .1rem 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="name-grc">Ἀνδοκίδης</div>
+    <div class="person-meta">Birth year: 440 BC</div>
+    <div class="person-meta">Death year: 390 BC</div>
+    <button type="button" class="collapsible">External Resources:</button>
+    <div class="content">
+    <ul>
+        <li>PAA: 127290</li>
+        <li>Wikidata: <a href="https://www.wikidata.org/wiki/Q391654">Q391654</a></li>
+        <li>TLG: <a href="https://catalog.perseus.org/cite-collections/authors/urn:cite:perseus:author.94.1">urn:cite:perseus:author.94.1</a></li>
+    </ul>
+    </div>
+    
+                    <div class='collapsible'>Legal Roles:</div> 
+                    <div class='content'>
+                        <ul>
+                            <li> Plaintiff in: <a href='/event-index/plaintiffs_v_andocides'>Plaintiffs against Andocides for illegally exercising citizen rights</a></li>
+                        </ul>
+                    </div>
+                    
+    
+                        <div class="collapsible">Speaking Roles:</div>
+                        <div class="content">
+                            <ul>
+                                <li>Speaker of: <a href='/corpus-index/Andoc_1'>Andoc 1</a></li>
+                            </ul>
+                        </div>
+                        
+    <div class='authorship'>Authorship:</div>
+    <div class="author-grid">
+        
+                                <div class="author-card">
+                                    <div class="author-info">Author of</div>
+                                    <div class="author-info"><a href="/corpus-index/Andoc_1">Andoc 1</a></div>
+                                </div>
+                                
+                                <div class="author-card">
+                                    <div class="author-info">Author of</div>
+                                    <div class="author-info"><a href="/corpus-index/Andoc_2">Andoc 2</a></div>
+                                </div>
+                                
+                                <div class="author-card">
+                                    <div class="author-info">Probable Author of</div>
+                                    <div class="author-info"><a href="/corpus-index/Andoc_3">Andoc 3</a></div>
+                                </div>
+                                
+                                <div class="author-card">
+                                    <div class="author-info">Canon Author of</div>
+                                    <div class="author-info"><a href="/corpus-index/Andoc_4">Andoc 4</a></div>
+                                </div>
+                                
+    </div>
+    </div> 
+    <script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
