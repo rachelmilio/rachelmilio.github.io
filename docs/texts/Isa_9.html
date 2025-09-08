@@ -31,6 +31,19 @@ exclude: true
                 color: #131313; 
                 font-size: 1.7em;
             }
+        .responsive-iframe {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0; 
+            overflow: hidden;
+            }
+        .responsive-iframe iframe {
+            width: 95%;
+            height: 95%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            }
     </style>
 </head>
 <body>
@@ -45,5 +58,8 @@ exclude: true
         <div class="meta-text">Type: Forensic Speech</div>
         <div class="meta-text">Speaker: <a href='/person-index/unm49'> Unnamed Son Of Theophrastus</a></div>
         <div class="meta-text">Speech written for  <a href='/event-index/dispute_for_estate_of_astyphilus'>Inheritance dispute for the estate of Astyphilus</a></div>
+    </div>
+    <div class="responsive-iframe">
+        <iframe src="/Isa_9-text"></iframe>
     </div>
 </body>

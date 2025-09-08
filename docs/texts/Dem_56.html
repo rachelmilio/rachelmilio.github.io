@@ -31,6 +31,19 @@ exclude: true
                 color: #131313; 
                 font-size: 1.7em;
             }
+        .responsive-iframe {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0; 
+            overflow: hidden;
+            }
+        .responsive-iframe iframe {
+            width: 95%;
+            height: 95%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            }
     </style>
 </head>
 <body>
@@ -45,5 +58,8 @@ exclude: true
         <div class="meta-text">Type: Forensic Accusatory Speech</div>
         <div class="meta-text">Speaker: <a href='/person-index/301765'> Dareius</a></div>
         <div class="meta-text">Accusatory speech written for  <a href='/event-index/dareius_v_dionysodorus'>Dareius against Dionysodorus for financial damages</a></div>
+    </div>
+    <div class="responsive-iframe">
+        <iframe src="/Dem_56-text"></iframe>
     </div>
 </body>
