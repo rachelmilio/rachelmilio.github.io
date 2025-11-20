@@ -31,24 +31,47 @@ exclude: true
             text-align: right;
         }
         .reference-item {
-            border-width: 1px;
+            border: solid 1px #899db2;
             border-radius: 5px;
-            border-color: #7a92ab;
-            border: solid;
             background-color: #edeff1;
-            margin: 1em 0em;
+            margin: 0em 0em;
             padding: .5em 1em;
+        }
+        .collapsible {
+            border: 1px solid #e0e0e0; 
+            margin: .5rem 0 0 0; 
+            padding: 1rem;
+            border-radius: 8px;
+            background: #fafafa;
+            cursor: pointer;
+            width: 100%;
+            text-align: left;
+            outline: none;
+            font-size: 1.3em;
+            font-family: "New Athena Unicode", "Cardo", "Palatino Linotype", serif;
+        }
+        .collapsible:hover {
+            background-color: #6b8195;
+        }
+        .content {
+            display: none;
+            overflow: hidden;
+        }
+        .relation-list {
+            padding-left: 10px;
         }
     </style>
 </head>
 <body>
     <div class="name-grc">Ἀριστογείτων</div>
+    <div class="person-meta">Type: Real</div>
     <div class="person-meta">Gender: Male</div>
-    <div class="person-meta">PAA ID: 168145</div>
+    <div class='person-meta'>PAA: 168145</div>
+    <div class='person-meta'>Relations:</div><ul class='relation-list'><li>Son of: <a href='/person-index/unw16'>Unnamed mother of Aristogeiton</a></li></ul>
     
         <div class="person-meta">Legal Roles:</div>
         <ul>
-        <li id='http://www.ontologia.fr/OTB/merged_attic_law_2.0/athens_v_aristogeiton'>Defendant in: <a href='/event-index/athens_v_aristogeiton'>Prosecutors against Aristogeiton for treason</a></li><li id='http://www.ontologia.fr/OTB/merged_attic_law_2.0/lycurgus_and_demosthenes_v_aristogeiton'>Defendant in: <a href='/event-index/lycurgus_and_demosthenes_v_aristogeiton'>Lycurgus and Demosthenes against Aristogeiton for illegally exercising citizenship rights</a></li>
+        <li id='http://www.ontologia.fr/OTB/atticlaw/lycurgus_and_demosthenes_v_aristogeiton'>Defendant in: <a href='/event-index/lycurgus_and_demosthenes_v_aristogeiton'>Lycurgus and Demosthenes against Aristogeiton for illegally exercising citizenship rights</a></li><li id='http://www.ontologia.fr/OTB/atticlaw/athens_v_aristogeiton'>Defendant in: <a href='/event-index/athens_v_aristogeiton'>Prosecutors against Aristogeiton for treason</a></li>
         </ul>
         
     

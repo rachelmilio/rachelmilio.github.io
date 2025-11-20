@@ -6,9 +6,9 @@ exclude: true
 ---
 <!DOCTYPE html>
 <head>
- <meta charset="utf-8"/>
- <style>
-  body { font-family: "New Athena Unicode", "Cardo", "Palatino Linotype", serif; }
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: "New Athena Unicode", "Cardo", "Palatino Linotype", serif; }
         .name-grc { 
                 font-style: italic; 
                 color: #34495e;
@@ -31,109 +31,44 @@ exclude: true
             text-align: right;
         }
         .reference-item {
-            border-width: 1px;
+            border: solid 1px #899db2;
             border-radius: 5px;
-            border-color: #7a92ab;
-            border: solid;
             background-color: #edeff1;
-            margin: 1em 0em;
+            margin: 0em 0em;
             padding: .5em 1em;
         }
- </style>
+        .collapsible {
+            border: 1px solid #e0e0e0; 
+            margin: .5rem 0 0 0; 
+            padding: 1rem;
+            border-radius: 8px;
+            background: #fafafa;
+            cursor: pointer;
+            width: 100%;
+            text-align: left;
+            outline: none;
+            font-size: 1.3em;
+            font-family: "New Athena Unicode", "Cardo", "Palatino Linotype", serif;
+        }
+        .collapsible:hover {
+            background-color: #6b8195;
+        }
+        .content {
+            display: none;
+            overflow: hidden;
+        }
+        .relation-list {
+            padding-left: 10px;
+        }
+    </style>
 </head>
 <body>
- <div class="name-grc">
-  Ὅμηρος
- </div>
- <div class="person-meta">
-  Gender: Male
- </div>
- <div class="person-meta">
-  PAA ID: None
- </div>
- <div class="references">
-  <h3>
-   References
-  </h3>
-  <div class="reference-item">
-   <blockquote class="snippet">
-    "οὐκ ἀφέξεται δέ, ὥς φασιν, οὐδὲ τῶν
-    <strong>
-     Ὁμήρου
-    </strong>
-    ποιημάτων οὐδὲ τῶν ὀνομάτων τῶν ἡρωικῶν, ἀλλὰ καὶ τὴν…"
-   </blockquote>
-   <div class="reference-attribution">
-    <a class="text-link" href="/corpus-index/Aes._1">
-     Aes. 1.133
-    </a>
-   </div>
-  </div>
-  <div class="reference-item">
-   <blockquote class="snippet">
-    "ἐπειδὴ δὲ Ἀχιλλέως καὶ Πατρόκλου μέμνησθε καὶ
-    <strong>
-     Ὁμήρου
-    </strong>
-    καὶ ἑτέρων ποιητῶν, ὡς τῶν μὲν δικαστῶν ἀνηκόων παιδείας…"
-   </blockquote>
-   <div class="reference-attribution">
-    <a class="text-link" href="/corpus-index/Aes._1">
-     Aes. 1.141
-    </a>
-   </div>
-  </div>
-  <div class="reference-item">
-   <blockquote class="snippet">
-    "λέξω δὲ πρῶτον μὲν περὶ
-    <strong>
-     Ὁμήρου
-    </strong>
-    , ὃν ἐν τοῖς πρεσβυτάτοις καὶ σοφωτάτοις τῶν ποιητῶν εἶναι τάττομεν…"
-   </blockquote>
-   <div class="reference-attribution">
-    <a class="text-link" href="/corpus-index/Aes._1">
-     Aes. 1.142
-    </a>
-   </div>
-  </div>
-  <div class="reference-item">
-   <blockquote class="snippet">
-    "…κἀν μυχῷ δείκνυσι γῆς. Euripides; play unknown.
-    <strong>
-     Ὅμηρον
-    </strong>
-    πολλάκις ἐν τῇ"
-   </blockquote>
-   <div class="reference-attribution">
-    <a class="text-link" href="/corpus-index/Aes._1">
-     Aes. 1.128
-    </a>
-   </div>
-  </div>
-  <div class="reference-item">
-   <blockquote class="snippet">
-    "[Mention in Aes. 3]"
-   </blockquote>
-   <div class="reference-attribution">
-    <a class="text-link" href="/corpus-index/Aes._3">
-     Aes. 3.185
-    </a>
-   </div>
-  </div>
-  <div class="reference-item">
-   <blockquote class="snippet">
-    "…Ἑλλήνων στεφανούμενον, οὐδεὶς ἂν ὑμῶν ὑπομείνειεν, ὅτι φησὶν
-    <strong>
-     Ὅμηρος
-    </strong>
-    ἄνανδρον αὐτὸν εἶναι καὶ συκοφάντην · αὐτοὶ δʼ ὅταν τὸν…"
-   </blockquote>
-   <div class="reference-attribution">
-    <a class="text-link" href="/corpus-index/Aes._3">
-     Aes. 3.231
-    </a>
-   </div>
-  </div>
- </div>
+    <div class="name-grc">Ὅμηρος</div>
+    <div class="person-meta">Type: Real</div>
+    <div class="person-meta">Gender: Male</div>
+    <div class='person-meta'>Wikidata: <a href='https://www.wikidata.org/wiki/Q6691'>Q6691</a></div>
+    <div class='person-meta'>Relations:</div><ul class='relation-list'><li>Son of: <a href='/person-index/Q184437'>Thetis</a></li></ul>
+    
+    
+    
 </body>
