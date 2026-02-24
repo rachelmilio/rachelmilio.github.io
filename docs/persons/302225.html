@@ -67,8 +67,29 @@ exclude: true
     <div class="person-meta">Type: Real</div>
     <div class="person-meta">Gender: Male</div>
     <div class='person-meta'>PAA: 302225</div>
-    <div class='person-meta'>Relations:</div><ul class='relation-list'><li>Father of: <a href='/person-index/508780'>Theomnestus</a></li><li>Father of: <a href='/person-index/unw22'>Unnamed wife of Apollodorus</a></li><li>Father of: <a href='/person-index/unw23'>Unnamed wife of Nicias</a></li></ul>
+    <div class='person-meta'>Relations:</div><ul class='relation-list'><li>Father of: <a href='/person-index/508780'>Theomnestus</a></li><li>Father of: <a href='/person-index/unw23'>Unnamed wife of Nicias</a></li><li>Father of: <a href='/person-index/unw22'>Unnamed wife of Apollodorus</a></li></ul>
+    
+        <div class="person-meta">Legal Roles:</div>
+        <ul>
+        <li id='http://www.ontologia.fr/OTB/atticlaw/apollodorus_v_stephanus'>Plaintiff in: <a href='/event-index/apollodorus_v_stephanus'>Apollodorus against Stephanus for false witness testimony</a></li>
+        </ul>
+        
     
     
-    
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+    </script>
 </body>

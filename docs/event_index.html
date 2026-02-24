@@ -42,7 +42,7 @@ permalink: /event-index
     <div class='event-index'>
         <div class='index-header'>
             <h1>Event Index</h1>
-            <p>Total event entities: 95</p>
+            <p>Total event entities: 96</p>
         </div>
         <div class='event-grid'>
             
@@ -357,6 +357,13 @@ permalink: /event-index
     <div class="event-card" id="dispute_for_estate_of_nicostratus">
         <a href="/event-index/dispute_for_estate_of_nicostratus">
             <div class="label">Inheritance dispute for the estate of Nicostratus</div>
+        </a>
+    </div>
+    
+
+    <div class="event-card" id="lycurgus_v_leocrates">
+        <a href="/event-index/lycurgus_v_leocrates">
+            <div class="label">Lycurgus against Leocrates for treason</div>
         </a>
     </div>
     
@@ -715,7 +722,7 @@ permalink: /event-index
 function searchEvents() {
     const searchTerm = document.getElementById('searchBox').value.toLowerCase();
     const cards = document.querySelectorAll('.event-card');
-    
+
     cards.forEach(card => {
         const text = card.textContent.toLowerCase();
         card.style.display = text.includes(searchTerm) ? 'block' : 'none';

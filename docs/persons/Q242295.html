@@ -63,7 +63,7 @@ exclude: true
     </style>
 </head>
 <body>
-    <div class="name-grc">None</div>
+    <div class="name-grc">Εὐρυδίκη</div>
     <div class="person-meta">Type: Real</div>
     <div class="person-meta">Gender: Female</div>
     <div class='person-meta'>Wikidata: <a href='https://www.wikidata.org/wiki/Q242295'>Q242295</a></div>
@@ -71,4 +71,20 @@ exclude: true
     
     
     
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+    </script>
 </body>

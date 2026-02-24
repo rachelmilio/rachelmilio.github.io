@@ -67,8 +67,24 @@ exclude: true
     <div class="person-meta">Type: Real</div>
     <div class="person-meta">Gender: Male</div>
     <div class='person-meta'>PAA: 515260</div>
-    <div class='person-meta'>Relations:</div><ul class='relation-list'><li>Father of: <a href='/person-index/441195'>Euxitheus</a></li><li>Husband of: <a href='/person-index/709720'>Nicarete</a></li></ul>
+    <div class='person-meta'>Relations:</div><ul class='relation-list'><li>Husband of: <a href='/person-index/709720'>Nicarete</a></li><li>Father of: <a href='/person-index/441195'>Euxitheus</a></li></ul>
     
     
     
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+    </script>
 </body>

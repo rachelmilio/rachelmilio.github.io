@@ -69,6 +69,27 @@ exclude: true
     <div class='person-meta'>PAA: 587870</div>
     
     
+        <div class="person-meta">Legal Roles:</div>
+        <ul>
+        <li id='http://www.ontologia.fr/OTB/atticlaw/theomnestos_v_neaira'>Defendant in: <a href='/event-index/theomnestos_v_neaira'>Theomnestus against Neaira for illegally exercising citizenship rights</a></li>
+        </ul>
+        
     
     
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+    </script>
 </body>

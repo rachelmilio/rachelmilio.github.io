@@ -69,6 +69,27 @@ exclude: true
     <div class='person-meta'>PAA: 120375</div>
     
     
+        <div class="person-meta">Legal Roles:</div>
+        <ul>
+        <li id='http://www.ontologia.fr/OTB/atticlaw/demosthenes_v_aeschines'>Defendant in: <a href='/event-index/demosthenes_v_aeschines'>Demosthenes against Aeschines for accepting bribes</a></li>
+        </ul>
+        
     
     
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+    </script>
 </body>

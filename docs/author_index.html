@@ -144,7 +144,7 @@ permalink: /author-index
 function searchPersons() {
     const searchTerm = document.getElementById('searchBox').value.toLowerCase();
     const cards = document.querySelectorAll('.author-card');
-    
+
     cards.forEach(card => {
         const text = card.textContent.toLowerCase();
         card.style.display = text.includes(searchTerm) ? 'block' : 'none';
