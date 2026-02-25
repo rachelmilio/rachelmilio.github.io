@@ -38,13 +38,13 @@ permalink: /person-index
             }
             .person-grid {
                 display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                gap: 1.5rem;
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                gap: 20px;
                 margin-top: 2rem;
             }
             .container {
                 display: grid;
-                grid-template-columns: 300px 1fr;  /* 300px for facet panel, rest for content */
+                grid-template-columns: 280px 1fr;  /* 300px for facet panel, rest for content */
                 gap: 20px;
                 max-width: 1400px;
                 margin: 0 auto;
@@ -92,6 +92,7 @@ permalink: /person-index
         </style>
 </head>
 <body>
+    
     <div class="container">
         <div class="facets-panel">
             <h2>Filter Persons</h2>
@@ -138,7 +139,7 @@ permalink: /person-index
                 </div> 
             </div>
         </div>
-    </div>
+    
     <div class="main-content">
     <div class='person-index'>
         <div class='index-header'>
@@ -11171,6 +11172,8 @@ permalink: /person-index
     </div>
     
     
+        </div>
+        </div>
         </div>
         </div>
 <script>
