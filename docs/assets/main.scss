@@ -4,12 +4,3 @@
 
 @import "minima";
 
-// Override after theme imports
-.main-container {
-    max-width: 100% !important;
-}
-
-// Force your custom layout to be full width
-.facets-panel, .person-index {
-    max-width: 100% !important;
-}

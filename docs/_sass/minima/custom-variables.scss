@@ -1,0 +1,6 @@
+// Override Minima's default content width
+$content-width: 1400px !default;  // Set to whatever width you need
+
+// You can also adjust the responsive breakpoints if needed
+$on-palm: 600px;      // Breakpoint for mobile
+$on-laptop: 900px;    // Breakpoint for tablet/laptop
