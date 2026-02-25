@@ -143,8 +143,8 @@ permalink: /person-index
     <div class="main-content">
     <div class='person-index'>
         <div class='index-header'>
-            <p>Total person entities: 1378</p>
-            <p>Displayed person entities: </p>
+            <p>Total person entities: <span id="total-count">0</span></p>
+            <p>Displayed person entities: <span id="displayed-count">0</span></p>
         </div>
         <div class='person-grid'>
             
@@ -11184,6 +11184,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // get all cards
     const personCards = document.querySelectorAll('.person-card');
+    const totalCards = document.querySelectorAll('.person-card').length;
+    document.getElementById('total-count').textContent = totalCards;
+    document.getElementById('displayed-count').textContent = totalCards;
 
     //get gender checkboxes
     const maleCheckbox = document.querySelector('input[data-facet="gender"][data-value="Male"]');
@@ -11212,6 +11215,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const showClaimant = claimantCheckbox.checked;
         const showWitness = witnessCheckbox.checked;
         const showSpeaker = speakerCheckbox.checked;
+
+        let visibleCount = 0;
 
         // loop through each card
         personCards.forEach(card => {
@@ -11246,10 +11251,12 @@ document.addEventListener('DOMContentLoaded', function() {
             // Show card only if BOTH filters pass
             if (genderMatch && searchMatch && roleMatch) {
                 card.style.display = 'block';
+                visibleCount++;
             } else {
                 card.style.display = 'none';
             }
         });
+         document.getElementById('displayed-count').textContent = visibleCount;
     }
     
     // Add event listeners
