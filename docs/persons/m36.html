@@ -6,9 +6,9 @@ exclude: true
 ---
 <!DOCTYPE html>
 <head>
-    <meta charset="UTF-8">
-    <style>
-        body { font-family: "New Athena Unicode", "Cardo", "Palatino Linotype", serif; }
+ <meta charset="utf-8"/>
+ <style>
+  body { font-family: "New Athena Unicode", "Cardo", "Palatino Linotype", serif; }
         .name-grc { 
                 font-style: italic; 
                 color: #34495e;
@@ -60,19 +60,58 @@ exclude: true
         .relation-list {
             padding-left: 10px;
         }
-    </style>
+ </style>
 </head>
 <body>
-    <div class="name-grc">Πυθῶναξ</div>
-    <div class="person-meta">Type: Real</div>
-    <div class="person-meta">Gender: Male</div>
-    
-    
-    
-    
-    
-    <script>
-        var coll = document.getElementsByClassName("collapsible");
+ <div class="name-grc">
+  Πυθῶναξ
+ </div>
+ <div class="person-meta">
+  Type: Real
+ </div>
+ <div class="person-meta">
+  Gender: Male
+ </div>
+ <div class="references">
+  <h3>
+   References
+  </h3>
+  <button class="collapsible" id="Din 2">
+   Din 2
+  </button>
+  <div class="content" id="Din 2">
+   <div class="reference-item">
+    <blockquote class="snippet">
+     "…; καί μοι σκοπεῖτε ταύτην τὴν στήλην. Ἄρθμιον τὸν
+     <strong>
+      Πυθώνακτος
+     </strong>
+     τὸν Ζελείτην πολέμιον εἶναι τοῦ δήμου καὶ τῶν συμμάχων,…"
+    </blockquote>
+    <div class="reference-attribution">
+     <a class="text-link" href="/corpus-index/Din_2">
+      Din 2.25
+     </a>
+    </div>
+   </div>
+   <div class="reference-item">
+    <blockquote class="snippet">
+     "…ψηφισάμενοι στήλην εἰς ἀκρόπολιν ἀνήνεγκαν, ὅτε φασὶν Ἄρθμιον τὸν
+     <strong>
+      Πυθώνακτος
+     </strong>
+     τὸν Ζελείτην κομίσαι τὸ χρυσίον ἐκ Μήδων ἐπὶ διαφθορᾷ τῶν…"
+    </blockquote>
+    <div class="reference-attribution">
+     <a class="text-link" href="/corpus-index/Din_2">
+      Din 2.24
+     </a>
+    </div>
+   </div>
+  </div>
+ </div>
+ <script>
+  var coll = document.getElementsByClassName("collapsible");
         var i;
 
         for (i = 0; i < coll.length; i++) {
@@ -86,5 +125,5 @@ exclude: true
             }
           });
         }
-    </script>
+ </script>
 </body>
