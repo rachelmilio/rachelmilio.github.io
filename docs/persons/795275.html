@@ -6,9 +6,9 @@ exclude: true
 ---
 <!DOCTYPE html>
 <head>
-    <meta charset="UTF-8">
-    <style>
-        body { font-family: "New Athena Unicode", "Cardo", "Palatino Linotype", serif; }
+ <meta charset="utf-8"/>
+ <style>
+  body { font-family: "New Athena Unicode", "Cardo", "Palatino Linotype", serif; }
         .name-grc { 
                 font-style: italic; 
                 color: #34495e;
@@ -60,19 +60,61 @@ exclude: true
         .relation-list {
             padding-left: 10px;
         }
-    </style>
+ </style>
 </head>
 <body>
-    <div class="name-grc">Πυθόνικος</div>
-    <div class="person-meta">Type: Real</div>
-    <div class="person-meta">Gender: Male</div>
-    <div class='person-meta'>PAA: 795275</div>
-    
-    
-    
-    
-    <script>
-        var coll = document.getElementsByClassName("collapsible");
+ <div class="name-grc">
+  Πυθόνικος
+ </div>
+ <div class="person-meta">
+  Type: Real
+ </div>
+ <div class="person-meta">
+  Gender: Male
+ </div>
+ <div class="person-meta">
+  PAA: 795275
+ </div>
+ <div class="references">
+  <h3>
+   References
+  </h3>
+  <button class="collapsible" id="Andoc 1">
+   Andoc 1
+  </button>
+  <div class="content" id="Andoc 1">
+   <div class="reference-item">
+    <blockquote class="snippet">
+     "…τριήρης ἡ στρατηγὶς ἤδη ἐξώρμει ἡ Λαμάχου · ἀναστὰς δὲ
+     <strong>
+      Πυθόνικος
+     </strong>
+     ἐν τῷ δήμῳ εἶπεν"
+    </blockquote>
+    <div class="reference-attribution">
+     <a class="text-link" href="/corpus-index/Andoc_1">
+      Andoc 1.11
+     </a>
+    </div>
+   </div>
+   <div class="reference-item">
+    <blockquote class="snippet">
+     "…ἀδελφὸν καὶ Ἱκέσιον τὸν αὐλητὴν καὶ τὸν Μελήτου δοῦλον.
+     <strong>
+      Πυθόνικος
+     </strong>
+     ἐκέλευε. καὶ ᾤχοντο, καὶ ἤγαγον θεράποντα Ἀρχεβιάδου"
+    </blockquote>
+    <div class="reference-attribution">
+     <a class="text-link" href="/corpus-index/Andoc_1">
+      Andoc 1.12
+     </a>
+    </div>
+   </div>
+  </div>
+ </div>
+ <script>
+  var coll = document.getElementsByClassName("collapsible");
         var i;
 
         for (i = 0; i < coll.length; i++) {
@@ -86,5 +128,5 @@ exclude: true
             }
           });
         }
-    </script>
+ </script>
 </body>
