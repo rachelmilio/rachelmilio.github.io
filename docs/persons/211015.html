@@ -6,9 +6,9 @@ exclude: true
 ---
 <!DOCTYPE html>
 <head>
-    <meta charset="UTF-8">
-    <style>
-        body { font-family: "New Athena Unicode", "Cardo", "Palatino Linotype", serif; }
+ <meta charset="utf-8"/>
+ <style>
+  body { font-family: "New Athena Unicode", "Cardo", "Palatino Linotype", serif; }
         .name-grc { 
                 font-style: italic; 
                 color: #34495e;
@@ -60,24 +60,77 @@ exclude: true
         .relation-list {
             padding-left: 10px;
         }
-    </style>
+ </style>
 </head>
 <body>
-    <div class="name-grc">Ἀρχεστρατίδης</div>
-    <div class="person-meta">Type: Real</div>
-    <div class="person-meta">Gender: Male</div>
-    <div class='person-meta'>PAA: 211015</div>
-    
-    
-        <div class="person-meta">Legal Roles:</div>
-        <ul>
-        <li id='http://www.ontologia.fr/OTB/atticlaw/archestratides_v_alcibiades'>Plaintiff in: <a href='/event-index/archestratides_v_alcibiades'>Archestratides against Alcibiades the Younger for avoiding military service</a></li>
-        </ul>
-        
-    
-    
-    <script>
-        var coll = document.getElementsByClassName("collapsible");
+ <div class="name-grc">
+  Ἀρχεστρατίδης
+ </div>
+ <div class="person-meta">
+  Type: Real
+ </div>
+ <div class="person-meta">
+  Gender: Male
+ </div>
+ <div class="person-meta">
+  PAA: 211015
+ </div>
+ <div class="person-meta">
+  Legal Roles:
+ </div>
+ <ul>
+  <li id="http://www.ontologia.fr/OTB/atticlaw/archestratides_v_alcibiades">
+   Plaintiff in:
+   <a href="/event-index/archestratides_v_alcibiades">
+    Archestratides against Alcibiades the Younger for avoiding military service
+   </a>
+  </li>
+ </ul>
+ <div class="references">
+  <h3>
+   References
+  </h3>
+  <button class="collapsible" id="Lys 14">
+   Lys 14
+  </button>
+  <div class="content" id="Lys 14">
+   <div class="reference-item">
+    <blockquote class="snippet">
+     "…μὲν οὖν τῶν ἄλλων ἀνάγνωθι δέ μοι τὸν νόμον.
+     <strong>
+      Ἀρχεστρατίδης
+     </strong>
+     ἱκανῶς κατηγόρησε · καὶ γὰρ τοὺς νόμους ἐπέδειξε καὶ μάρτυρας…"
+    </blockquote>
+    <div class="reference-attribution">
+     <a class="text-link" href="/corpus-index/Lys_14">
+      Lys 14.3
+     </a>
+    </div>
+   </div>
+  </div>
+  <button class="collapsible" id="Lys 15">
+   Lys 15
+  </button>
+  <div class="content" id="Lys 15">
+   <div class="reference-item">
+    <blockquote class="snippet">
+     "ἐγὼ μὲν οὖν καὶ φίλῳ ὄντι
+     <strong>
+      Ἀρχεστρατίδῃ
+     </strong>
+     βοηθῶν, καὶ Ἀλκιβιάδην ἐχθρὸν ὄντα ἐμαυτοῦ τιμωρούμενος, δέομαι…"
+    </blockquote>
+    <div class="reference-attribution">
+     <a class="text-link" href="/corpus-index/Lys_15">
+      Lys 15.12
+     </a>
+    </div>
+   </div>
+  </div>
+ </div>
+ <script>
+  var coll = document.getElementsByClassName("collapsible");
         var i;
 
         for (i = 0; i < coll.length; i++) {
@@ -91,5 +144,5 @@ exclude: true
             }
           });
         }
-    </script>
+ </script>
 </body>
