@@ -6,9 +6,9 @@ exclude: true
 ---
 <!DOCTYPE html>
 <head>
-    <meta charset="UTF-8">
-    <style>
-        body { font-family: "New Athena Unicode", "Cardo", "Palatino Linotype", serif; }
+ <meta charset="utf-8"/>
+ <style>
+  body { font-family: "New Athena Unicode", "Cardo", "Palatino Linotype", serif; }
         .name-grc { 
                 font-style: italic; 
                 color: #34495e;
@@ -60,19 +60,63 @@ exclude: true
         .relation-list {
             padding-left: 10px;
         }
-    </style>
+ </style>
 </head>
 <body>
-    <div class="name-grc">Λασθένης</div>
-    <div class="person-meta">Type: Real</div>
-    <div class="person-meta">Gender: Male</div>
-    
-    
-    
-    
-    
-    <script>
-        var coll = document.getElementsByClassName("collapsible");
+ <div class="name-grc">
+  Λασθένης
+ </div>
+ <div class="person-meta">
+  Type: Real
+ </div>
+ <div class="person-meta">
+  Gender: Male
+ </div>
+ <div class="references">
+  <h3>
+   References
+  </h3>
+  <button class="collapsible" id="Dem 8">
+   Dem 8
+  </button>
+  <div class="content" id="Dem 8">
+   <div class="reference-item">
+    <blockquote class="snippet">
+     "…αὐτῷ χαρίζεσθαι (εἰ δὲ μή, σκεψάσθων Εὐθυκράτη καὶ
+     <strong>
+      Λασθένη
+     </strong>
+     τοὺς Ὀλυνθίους, οἳ δοκοῦντες οἰκειότατʼ αὐτῷ διακεῖσθαι, ἐπειδὴ…"
+    </blockquote>
+    <div class="reference-attribution">
+     <a class="text-link" href="/corpus-index/Dem_8">
+      Dem 8.40
+     </a>
+    </div>
+   </div>
+  </div>
+  <button class="collapsible" id="Dem 9">
+   Dem 9
+  </button>
+  <div class="content" id="Dem 9">
+   <div class="reference-item">
+    <blockquote class="snippet">
+     "…μαστιγούμενοι καὶ σφαττόμενοι. καλῶς Ὀλυνθίων ἐφείσατο τῶν τὸν μὲν
+     <strong>
+      Λασθένην
+     </strong>
+     ἵππαρχον χειροτονησάντων, τὸν δʼ Ἀπολλωνίδην ἐκβαλόντων."
+    </blockquote>
+    <div class="reference-attribution">
+     <a class="text-link" href="/corpus-index/Dem_9">
+      Dem 9.66
+     </a>
+    </div>
+   </div>
+  </div>
+ </div>
+ <script>
+  var coll = document.getElementsByClassName("collapsible");
         var i;
 
         for (i = 0; i < coll.length; i++) {
@@ -86,5 +130,5 @@ exclude: true
             }
           });
         }
-    </script>
+ </script>
 </body>
