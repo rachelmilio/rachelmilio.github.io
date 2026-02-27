@@ -6,9 +6,9 @@ exclude: true
 ---
 <!DOCTYPE html>
 <head>
-    <meta charset="UTF-8">
-    <style>
-        body { font-family: "New Athena Unicode", "Cardo", "Palatino Linotype", serif; }
+ <meta charset="utf-8"/>
+ <style>
+  body { font-family: "New Athena Unicode", "Cardo", "Palatino Linotype", serif; }
         .name-grc { 
                 font-style: italic; 
                 color: #34495e;
@@ -60,24 +60,72 @@ exclude: true
         .relation-list {
             padding-left: 10px;
         }
-    </style>
+ </style>
 </head>
 <body>
-    <div class="name-grc">Διογείτων</div>
-    <div class="person-meta">Type: Real</div>
-    <div class="person-meta">Gender: Male</div>
-    <div class='person-meta'>PAA: 325645</div>
-    
-    
-        <div class="person-meta">Legal Roles:</div>
-        <ul>
-        <li id='http://www.ontologia.fr/OTB/atticlaw/theomnestos_v_neaira'>Witness in: <a href='/event-index/theomnestos_v_neaira'>Theomnestus against Neaira for illegally exercising citizenship rights</a></li>
-        </ul>
-        
-    
-    
-    <script>
-        var coll = document.getElementsByClassName("collapsible");
+ <div class="name-grc">
+  Διογείτων
+ </div>
+ <div class="person-meta">
+  Type: Real
+ </div>
+ <div class="person-meta">
+  Gender: Male
+ </div>
+ <div class="person-meta">
+  PAA: 325645
+ </div>
+ <div class="person-meta">
+  Legal Roles:
+ </div>
+ <ul>
+  <li id="http://www.ontologia.fr/OTB/atticlaw/theomnestos_v_neaira">
+   Witness in:
+   <a href="/event-index/theomnestos_v_neaira">
+    Theomnestus against Neaira for illegally exercising citizenship rights
+   </a>
+  </li>
+ </ul>
+ <div class="references">
+  <h3>
+   References
+  </h3>
+  <button class="collapsible" id="Dem 59">
+   Dem 59
+  </button>
+  <div class="content" id="Dem 59">
+   <div class="reference-item">
+    <blockquote class="snippet">
+     "…δὲ Στεφάνου τουτουὶ Σαυρίας Λαμπτρεύς · κοινὸν δὲ αὑτοῖς προσαιροῦνται
+     <strong>
+      Διογείτονα
+     </strong>
+     Ἀχαρνέα."
+    </blockquote>
+    <div class="reference-attribution">
+     <a class="text-link" href="/corpus-index/Dem_59">
+      Dem 59.45
+     </a>
+    </div>
+   </div>
+   <div class="reference-item">
+    <blockquote class="snippet">
+     "…ἀναγνώσεται. κάλει μοι Σάτυρον Ἀλωπεκῆθεν, Σαυρίαν Λαμπτρέα,
+     <strong>
+      Διογείτονα
+     </strong>
+     Ἀχαρνέα."
+    </blockquote>
+    <div class="reference-attribution">
+     <a class="text-link" href="/corpus-index/Dem_59">
+      Dem 59.47
+     </a>
+    </div>
+   </div>
+  </div>
+ </div>
+ <script>
+  var coll = document.getElementsByClassName("collapsible");
         var i;
 
         for (i = 0; i < coll.length; i++) {
@@ -91,5 +139,5 @@ exclude: true
             }
           });
         }
-    </script>
+ </script>
 </body>
