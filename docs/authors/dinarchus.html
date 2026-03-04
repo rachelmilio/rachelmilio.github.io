@@ -72,6 +72,20 @@ exclude: true
             margin: 0 0 .1rem 0;
             text-align: center;
         }
+        .snippet {
+            font-size: 1.4em;
+            color: rgb(44, 44, 44);
+        }
+        .reference-attribution{
+            text-align: right;
+        }
+        .reference-item {
+            border: solid 1px #899db2;
+            border-radius: 5px;
+            background-color: #edeff1;
+            margin: 0em 0em;
+            padding: .5em 1em;
+        }
     </style>
 </head>
 <body>
@@ -83,12 +97,12 @@ exclude: true
     <ul>
         <li>PAA: 302128</li>
         <li>Wikidata: <a target="_blank" rel="noopener noreferrer" href="https://www.wikidata.org/wiki/Q473421">Q473421</a></li>
-        <li>TLG: <a target="_blank" rel="noopener noreferrer" href="https://catalog.perseus.org/cite-collections/authors/urn:cite:perseus:author.477.1">urn:cite:perseus:author.477.1</a></li>
+        <li>TLG: <a target="_blank" rel="noopener noreferrer" href="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0029">tlg0029</a></li>
     </ul>
     </div>
     
-    
-    <div class='authorship'>Authorship:</div>
+    <button class="collapsible">Authorship:</button>
+    <div class="content">
     <div class="author-grid">
         
                                 <div class="author-card">
@@ -111,6 +125,7 @@ exclude: true
                                     <div class="author-info"><a href="/corpus-index/Din_3">Din 3</a></div>
                                 </div>
                                 
+    </div>
     </div>
     </div> 
     <script>
