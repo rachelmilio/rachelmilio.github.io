@@ -44,6 +44,34 @@ exclude: true
             left: 0;
             top: 0;
             }
+            .container {
+                display: grid;
+                grid-template-columns: 1fr 280px;  /* 300px for facet panel, rest for content */
+                gap: 20px;
+                max-width: 1400px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+            .main-content {
+                background: white;
+                border-radius: 8px;
+                padding: 20px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            /* Facets Panel */
+            .facets-panel {
+                background: white;
+                border-radius: 8px;
+                padding: 20px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                height: fit-content;
+                position: sticky;
+                top: 20px;
+            }
+            .facets-header {
+                border-bottom: 2px solid #34495e;
+                padding-bottom: 1rem;
+            }
     </style>
 </head>
 <body>
@@ -59,7 +87,14 @@ exclude: true
         <div class="meta-text">Speaker(s): <ul><li><a href='/person-index/509770'> Theopompus</a></li></ul></div>
         <div class="meta-text">Defense speech written for  <a href='/event-index/unnamed_plaintiff_v_theopompus'>Unnamed son of Stratocles against Theopompus for mistreatment of an orphan</a></div>
     </div>
-    <div class="responsive-iframe">
-        <iframe src="/Isa_11-text"></iframe>
+    <div class="container">
+        <div class="main-content">
+            <div class="responsive-iframe">
+                <iframe src="/Isa_11-text"></iframe>
+            </div>
+        </div>
+        <div class="facets-panel">
+            <h3 class="facets-header">Mentioned People:</h3>
+        </div>
     </div>
 </body>

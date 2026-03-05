@@ -6,9 +6,9 @@ exclude: true
 ---
 <!DOCTYPE html>
 <head>
-    <meta charset="UTF-8">
-    <style>
-        body { font-family: "New Athena Unicode", "Cardo", "Palatino Linotype", serif; }
+ <meta charset="utf-8"/>
+ <style>
+  body { font-family: "New Athena Unicode", "Cardo", "Palatino Linotype", serif; }
         .name-grc { 
                 font-style: italic; 
                 color: #34495e;
@@ -44,22 +44,444 @@ exclude: true
             left: 0;
             top: 0;
             }
-    </style>
+            .container {
+                display: grid;
+                grid-template-columns: 1fr 280px;  /* 300px for facet panel, rest for content */
+                gap: 20px;
+                max-width: 1400px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+            .main-content {
+                background: white;
+                border-radius: 8px;
+                padding: 20px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            /* Facets Panel */
+            .facets-panel {
+                background: white;
+                border-radius: 8px;
+                padding: 20px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                height: fit-content;
+                position: sticky;
+                top: 20px;
+            }
+            .facets-header {
+                border-bottom: 2px solid #34495e;
+                padding-bottom: 1rem;
+            }
+ </style>
 </head>
 <body>
-    <div class="name-grc">περὶ τῆς παραπρεσβείας</div>
-    <div class="text-label">Aes 2</div>
-    <div class="block-meta">
-        <div class="meta-text">Author(s):
-        <ul>
-            <li id='http://www.ontologia.fr/OTB/classical_orators#aeschines'>Canonically Attributed To: <a href='/person-index/aeschines'>Aeschines</a></li><li id='http://www.ontologia.fr/OTB/classical_orators#aeschines'>Has Author: <a href='/person-index/aeschines'>Aeschines</a></li>
-        </ul>
-        </div>
-        <div class="meta-text">Type: Forensic Defense Speech</div>
-        <div class="meta-text">Speaker(s): <ul><li><a href='/person-index/aeschines'> Aeschines</a></li></ul></div>
-        <div class="meta-text">Defense speech written for  <a href='/event-index/demosthenes_v_aeschines'>Demosthenes against Aeschines for accepting bribes</a></div>
-    </div>
-    <div class="responsive-iframe">
-        <iframe src="/Aes_2-text"></iframe>
-    </div>
+ <div class="name-grc">
+  περὶ τῆς παραπρεσβείας
+ </div>
+ <div class="text-label">
+  Aes 2
+ </div>
+ <div class="block-meta">
+  <div class="meta-text">
+   Author(s):
+   <ul>
+    <li id="http://www.ontologia.fr/OTB/classical_orators#aeschines">
+     Canonically Attributed To:
+     <a href="/person-index/aeschines">
+      Aeschines
+     </a>
+    </li>
+    <li id="http://www.ontologia.fr/OTB/classical_orators#aeschines">
+     Has Author:
+     <a href="/person-index/aeschines">
+      Aeschines
+     </a>
+    </li>
+   </ul>
+  </div>
+  <div class="meta-text">
+   Type: Forensic Defense Speech
+  </div>
+  <div class="meta-text">
+   Speaker(s):
+   <ul>
+    <li>
+     <a href="/person-index/aeschines">
+      Aeschines
+     </a>
+    </li>
+   </ul>
+  </div>
+  <div class="meta-text">
+   Defense speech written for
+   <a href="/event-index/demosthenes_v_aeschines">
+    Demosthenes against Aeschines for accepting bribes
+   </a>
+  </div>
+ </div>
+ <div class="container">
+  <div class="main-content">
+   <div class="responsive-iframe">
+    <iframe src="/Aes_2-text">
+    </iframe>
+   </div>
+  </div>
+  <div class="facets-panel">
+   <h3 class="facets-header">
+    Mentioned People:
+   </h3>
+   <ul id_="person_list">
+   </ul>
+   <li>
+    <a href="/person-index/531075">
+     Iatrocles
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/Q1320718">
+     Theseus
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/967590">
+     Phocion
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/303955">
+     Dercylus
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/542925">
+     Iphicrates
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/930470">
+     Philip
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/886180">
+     Timotheus
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/581750">
+     Conon
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/225105">
+     Atrometus
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/168590">
+     Aristodemus
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/444745">
+     Eurydice
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/306140">
+     Demainetos
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/952425">
+     Philochares
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/Q242295">
+     Eurydice I Of Macedon
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/654910">
+     Mnason
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/134930">
+     Antiochus
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/aeschines">
+     Aeschines
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/937530">
+     Philocrates
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/578330">
+     Cleochares
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/127280">
+     Andocides
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/m5">
+     Deiares
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/842270">
+     Strombichus
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/587565">
+     Ctesiphon
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/701680">
+     Nausicles
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/955865">
+     Philon
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/m11">
+     Aristophanes
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/772120">
+     Perdiccas
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/966010">
+     Phrynon
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/unw4">
+     Unnamed Wife Of Aphobetus
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/884310">
+     Timarchus
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/m4">
+     Everatus
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/569315">
+     Cephisophon
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/394100">
+     Epicrates
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/124820">
+     Amynta
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/m6">
+     Polyphontes
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/Q348668">
+     Acamas
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/731473">
+     Xenodokos
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/m9">
+     Aglaokreon
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/768010">
+     Pasiphon
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/Q1334087">
+     Phyllis
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/880495">
+     Temenidos
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/450015">
+     Euphiletos
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/164185">
+     Aristarchus
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/275915">
+     Glaucothea
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/m7">
+     Cheilon
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/608380">
+     Liparus
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/559800">
+     Callisthenes
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/unw5">
+     Unnamed Daughter Of Philodemus
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/934045">
+     Philodemos
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/566481">
+     Cersobleptes
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/120375">
+     Aleximachus
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/659840">
+     Moschus
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/769870">
+     Pausanias
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/792725">
+     Ptolemaios
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/276260">
+     Glaucon
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/165330">
+     Aristeides
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/unw3">
+     Unnamed Olynthian Freewoman
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/demosthenes">
+     Demosthenes
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/Q44233">
+     Hesiod
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/m10">
+     Phalaicus
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/Q332750">
+     Dionysius
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/789835">
+     Proxenus
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/m8">
+     Critoboulus
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/979470">
+     Chares
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/576545">
+     Kleoboulos
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/576520">
+     Kleoboule
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/401240">
+     Ergochares
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/124895">
+     Amyntor
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/834250">
+     Stephanus
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/428495">
+     Euboulos
+    </a>
+   </li>
+  </div>
+ </div>
 </body>

@@ -6,9 +6,9 @@ exclude: true
 ---
 <!DOCTYPE html>
 <head>
-    <meta charset="UTF-8">
-    <style>
-        body { font-family: "New Athena Unicode", "Cardo", "Palatino Linotype", serif; }
+ <meta charset="utf-8"/>
+ <style>
+  body { font-family: "New Athena Unicode", "Cardo", "Palatino Linotype", serif; }
         .name-grc { 
                 font-style: italic; 
                 color: #34495e;
@@ -44,22 +44,344 @@ exclude: true
             left: 0;
             top: 0;
             }
-    </style>
+            .container {
+                display: grid;
+                grid-template-columns: 1fr 280px;  /* 300px for facet panel, rest for content */
+                gap: 20px;
+                max-width: 1400px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+            .main-content {
+                background: white;
+                border-radius: 8px;
+                padding: 20px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            /* Facets Panel */
+            .facets-panel {
+                background: white;
+                border-radius: 8px;
+                padding: 20px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                height: fit-content;
+                position: sticky;
+                top: 20px;
+            }
+            .facets-header {
+                border-bottom: 2px solid #34495e;
+                padding-bottom: 1rem;
+            }
+ </style>
 </head>
 <body>
-    <div class="name-grc">Περὶ τῶν μυστηρίων</div>
-    <div class="text-label">Andoc 1</div>
-    <div class="block-meta">
-        <div class="meta-text">Author(s):
-        <ul>
-            <li id='http://www.ontologia.fr/OTB/classical_orators#andocides'>Canonically Attributed To: <a href='/person-index/andocides'>Andocides</a></li><li id='http://www.ontologia.fr/OTB/classical_orators#andocides'>Has Author: <a href='/person-index/andocides'>Andocides</a></li>
-        </ul>
-        </div>
-        <div class="meta-text">Type: Forensic Defense Speech</div>
-        <div class="meta-text">Speaker(s): <ul><li><a href='/person-index/andocides'> Andocides</a></li></ul></div>
-        <div class="meta-text">Defense speech written for  <a href='/event-index/plaintiffs_v_andocides'>Plaintiffs against Andocides for illegally exercising citizen rights</a></div>
-    </div>
-    <div class="responsive-iframe">
-        <iframe src="/Andoc_1-text"></iframe>
-    </div>
+ <div class="name-grc">
+  Περὶ τῶν μυστηρίων
+ </div>
+ <div class="text-label">
+  Andoc 1
+ </div>
+ <div class="block-meta">
+  <div class="meta-text">
+   Author(s):
+   <ul>
+    <li id="http://www.ontologia.fr/OTB/classical_orators#andocides">
+     Canonically Attributed To:
+     <a href="/person-index/andocides">
+      Andocides
+     </a>
+    </li>
+    <li id="http://www.ontologia.fr/OTB/classical_orators#andocides">
+     Has Author:
+     <a href="/person-index/andocides">
+      Andocides
+     </a>
+    </li>
+   </ul>
+  </div>
+  <div class="meta-text">
+   Type: Forensic Defense Speech
+  </div>
+  <div class="meta-text">
+   Speaker(s):
+   <ul>
+    <li>
+     <a href="/person-index/andocides">
+      Andocides
+     </a>
+    </li>
+   </ul>
+  </div>
+  <div class="meta-text">
+   Defense speech written for
+   <a href="/event-index/plaintiffs_v_andocides">
+    Plaintiffs against Andocides for illegally exercising citizen rights
+   </a>
+  </div>
+ </div>
+ <div class="container">
+  <div class="main-content">
+   <div class="responsive-iframe">
+    <iframe src="/Andoc_1-text">
+    </iframe>
+   </div>
+  </div>
+  <div class="facets-panel">
+   <h3 class="facets-header">
+    Mentioned People:
+   </h3>
+   <ul id_="person_list">
+   </ul>
+   <li>
+    <a href="/person-index/436945">
+     Eucles
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/712520">
+     Nicias
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/632630">
+     Mantitheos
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/601230">
+     Lamachus
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/987955">
+     Charmides
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/450065">
+     Euphiletos
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/554480">
+     Callias
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/983120">
+     Charicles
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/606015">
+     Leon
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/Q130890">
+     Oedipus
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/unw8">
+     Unnamed Mother Of Andocides
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/251120">
+     Apsephion
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/578250">
+     Cleophon
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/538910">
+     Hipponicus
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/768550">
+     Patrocleides
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/771270">
+     Peisandros
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/449565">
+     Euphemos
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/602655">
+     Leagros
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/208445">
+     Archebiades
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/128425">
+     Andromachus
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/121652">
+     Alcibiades
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/327540">
+     Diognetus
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/936885">
+     Philocrates
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/609995">
+     Lydos
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/331975">
+     Diocleides
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/Q212091">
+     Aegisthus
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/881010">
+     Teukros
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/andocides">
+     Andocides
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/107660">
+     Agyrrhius
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/554210">
+     Callias
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/639292">
+     Meletus
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/553495">
+     Callias
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/579410">
+     Cleonymus
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/567070">
+     Cephisius
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/763480">
+     Panaitios
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/542270">
+     Isotimides
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/121630">
+     Alcibiades
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/881860">
+     Telocles
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/123787">
+     Amiantos
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/554500">
+     Callias
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/605075">
+     Leogorus
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/973355">
+     Xairedemos
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/920180">
+     Pherekles
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/830315">
+     Speusippos
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/795275">
+     Pythonikos
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/unw7">
+     Unnamed Mother Of Charmides
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/399195">
+     Epichares
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/542585">
+     Ischomachus
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/617775">
+     Lysistratos
+    </a>
+   </li>
+   <li>
+    <a href="/person-index/unw10">
+     Unnamed Daughter Of Ischomachus
+    </a>
+   </li>
+  </div>
+ </div>
 </body>
