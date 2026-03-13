@@ -1,0 +1,556 @@
+---
+layout: page
+title: Family Tree 
+permalink: /case-studies/family-tree
+exclude: true
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>my-family-chart</title>
+  <script src="https://unpkg.com/d3@7"></script>
+  <script type="module" src="https://unpkg.com/family-chart@0.9.0"></script>
+  <link rel="stylesheet" href="https://unpkg.com/family-chart@0.9.0/dist/styles/family-chart.css">
+  <style> body { font-family: "New Athena Unicode", "Cardo", "Palatino Linotype", serif; }
+  .header { font-size: 1.8em; text-align: center; padding-bottom: .7em;}
+    </style>
+</head>
+<body>
+    <div class="header">Based on: <a href="/corpus-index/isa_11">Isa. 11</a> and <a href="/corpus-index/dem_43">Dem. 43</a></div>
+<div id="FamilyChart" class="f3" style="width:100%;height:900px;margin:auto;background-color:rgb(33,33,33);color:#fff;"></div>
+<script type="module">
+
+create(data())
+
+function create(data) {
+  const f3Chart = f3.createChart('#FamilyChart', data)
+    .setTransitionTime(1000)
+    .setCardXSpacing(250)
+    .setCardYSpacing(150)
+    .setSingleParentEmptyCard(false, {label: 'ADD'})
+    .setShowSiblingsOfMain(false)
+    .setOrientationVertical()
+
+  const f3Card = f3Chart.setCardHtml()
+    .setCardDisplay([["first name"],["paa"]])
+    .setCardDim(null)
+    .setMiniTree(true)
+    .setStyle('imageRect')
+    .setOnHoverPathToMain()
+
+  
+  /*const f3EditTree = f3Chart.editTree()
+    .fixed(true)
+    .setFields(["first name","paa"])
+    .setEditFirst(true)
+    .setCardClickOpen(f3Card)
+  
+  f3EditTree.setEdit()*/
+
+  f3Chart.updateTree({initial: true})
+  f3EditTree.open(f3Chart.getMainDatum())
+
+  f3Chart.updateTree({initial: true})
+}
+
+function data() {
+  return [
+    {
+      "id": "0",
+      "rels": {
+        "children": [
+          "106750",
+          "427932",
+          "836680",
+          "576855",
+          "101590"
+        ]
+      },
+      "data": {
+        "first name": "Bouselos",
+        "gender": "M",
+        "paa": "<a href='/person-index/268605'>268605</a>"
+      }
+    },
+    {
+      "id": "106750",
+      "data": {
+        "gender": "M",
+        "first name": "Hagnias",
+        "paa": "<a href='/person-index/106750'>106750</a>"
+      },
+      "rels": {
+        "parents": [
+          "0"
+        ],
+        "children": [
+          "776725",
+          "966620"
+        ]
+      }
+    },
+    {
+      "id": "776725",
+      "data": {
+        "gender": "M",
+        "first name": "Polemon",
+        "paa": "<a href='/person-index/776725'>776725</a>"
+      },
+      "rels": {
+        "parents": [
+          "106750"
+        ],
+        "spouses": [
+            "unw61"
+        ],
+        "children": [
+            "106760"
+        ]
+      }
+    },
+    {
+      "id": "966620",
+      "data": {
+        "gender": "F",
+        "first name": "Philomache",
+        "paa": "<a href='/person-index/966620'>966620</a>"
+      },
+      "rels": {
+        "parents": [
+          "106750"
+        ],
+        "spouses": [
+            "922205"
+        ],
+        "children": [
+            "427935"
+        ]
+      }
+    },
+    {
+      "id": "unw61",
+      "data": {
+        "gender": "F",
+        "first name": "Unnamed mother of Hagnias",
+        "paa": "<a href='/person-index/unw61'>unw61</a>"
+      },
+      "rels": {
+        "parents": [
+          "917150"
+        ],
+        "spouses": [
+            "776725"
+        ],
+        "children": [
+            "106760"
+        ]
+      }
+    },
+    {
+      "id": "922205",
+      "data": {
+        "gender": "M",
+        "first name": "Philargus",
+        "paa": "<a href='/person-index/922205'>922205</a>"
+      },
+      "rels": {
+        "spouses": [
+            "966620",
+            "879535"
+        ],
+        "children": [
+            "427935",
+            "645105"
+        ],
+        "parents": [
+            "427932"
+        ]
+      }
+    },
+    {
+      "id": "917150",
+      "data": {
+        "gender": "M",
+        "first name": "Phanostratus",
+        "paa": "<a href='/person-index/917150'>917150</a>"
+      },
+      "rels": {
+        "children": [
+            "836685",
+            "unw61"
+        ],
+        "parents": [
+            "836680"
+        ]
+      }
+    },
+    {
+      "id": "836685",
+      "data": {
+        "gender": "M",
+        "first name": "Stratius",
+        "paa": "<a href='/person-index/836685'>836685</a>"
+      },
+      "rels": {
+        "parents": [
+            "917150"
+        ]
+      }
+    },
+    {
+      "id": "879535",
+      "data": {
+        "gender": "F",
+        "first name": "Telesippe",
+        "paa": "<a href='/person-index/879535'>879535</a>"
+      },
+      "rels": {
+        "spouses": [
+            "922205"
+        ],
+        "children": [
+            "645105"
+        ]
+      }
+    },
+    {
+      "id": "427935",
+      "data": {
+        "gender": "M",
+        "first name": "Eubolides",
+        "paa": "<a href='/person-index/427935'>427935</a>"
+      },
+      "rels": {
+        "parents": [
+            "922205",
+            "966620"
+        ],
+        "children": [
+            "966625"
+        ]
+      }
+    },
+    {
+      "id": "645105",
+      "data": {
+        "gender": "M",
+        "first name": "Menestheus",
+        "paa": "<a href='/person-index/645105'>645105</a>"
+      },
+      "rels": {
+        "parents": [
+            "922205",
+            "879535"
+        ]
+      }
+    },
+    {
+      "id": "966625",
+      "data": {
+        "gender": "F",
+        "first name": "Philomache",
+        "paa": "<a href='/person-index/966625'>966625</a>"
+      },
+      "rels": {
+        "parents": [
+            "427935"
+        ],
+        "spouses": [
+            "861430"
+        ]
+      }
+    },
+    {
+      "id": "861430",
+      "data": {
+        "gender": "M",
+        "first name": "Sositheus",
+        "paa": "<a href='/person-index/861430'>861430</a>"
+      },
+      "rels": {
+        "parents": [
+            "859540",
+            "unw32"
+        ],
+        "spouses": [
+            "966625"
+        ]
+      }
+    },
+    {
+      "id": "859540",
+      "data": {
+        "gender": "M",
+        "first name": "Sosias",
+        "paa": "<a href='/person-index/859540'>859540</a>"
+      },
+      "rels": {
+        "spouses": [
+            "unw32"
+        ],
+        "children": [
+            "861430"
+        ]
+      }
+    },
+    {
+      "id": "unw32",
+      "data": {
+        "gender": "F",
+        "first name": "Unnamed daughter of Callistratus",
+        "paa": "<a href='/person-index/unw32'>unw32</a>"
+      },
+      "rels": {
+        "spouses": [
+            "859540"
+        ],
+        "children": [
+            "861430"
+        ],
+        "parents": [
+            "561880",
+            "unw35"
+        ]
+      }
+    },
+    {
+      "id": "427932",
+      "data": {
+        "gender": "M",
+        "first name": "Eubulides",
+        "paa": "<a href='/person-index/427932'>427932</a>"
+      },
+      "rels": {
+        "parents": [
+          "0"
+        ],
+        "children": [
+            "922205",
+            "561880"
+        ]
+      }
+    },
+    {
+      "id": "561880",
+      "data": {
+        "gender": "M",
+        "first name": "Callistratus",
+        "paa": "<a href='/person-index/561880'>561880</a>"
+      },
+      "rels": {
+        "parents": [
+          "427932"
+        ],
+        "children": [
+            "unw32",
+            "unw35"
+        ]
+      }
+    },
+    {
+      "id": "unw35",
+      "data": {
+        "gender": "F",
+        "first name": "Unnamed wife of Callistratus",
+        "paa": "<a href='/person-index/unw35'>unw35</a>"
+      },
+      "rels": {
+        "spouses": [
+          "561880"
+        ],
+        "children": [
+            "unw32"
+        ]
+      }
+    },
+    {
+      "id": "836680",
+      "data": {
+        "gender": "M",
+        "first name": "Stratius",
+        "paa": "<a href='/person-index/836680'>836680</a>"
+      },
+      "rels": {
+        "parents": [
+          "0"
+        ],
+        "children": [
+            "917150",
+            "982505"
+        ]
+      }
+    },
+    {
+      "id": "982505",
+      "data": {
+        "gender": "M",
+        "first name": "Xaridemus",
+        "paa": "<a href='/person-index/982505'>982505</a>"
+      },
+      "rels": {
+        "parents": [
+          "836680"
+        ],
+        "children": [
+            "837785",
+            "509770"
+        ]
+      }
+    },
+    {
+      "id": "837785",
+      "data": {
+        "gender": "M",
+        "first name": "Stratocles",
+        "paa": "<a href='/person-index/837785'>837785</a>"
+      },
+      "rels": {
+        "parents": [
+          "982505"
+        ],
+        "spouses": [
+            "unw62"
+        ]
+      }
+    },
+    {
+      "id": "509770",
+      "data": {
+        "gender": "M",
+        "first name": "Theopompus",
+        "paa": "<a href='/person-index/509770'>509770</a>"
+      },
+      "rels": {
+        "parents": [
+          "982505"
+        ],
+        "spouses": [
+            "unw34"
+        ],
+        "children": [
+            "631485"
+        ]
+      }
+    },
+    {
+      "id": "631485",
+      "data": {
+        "gender": "M",
+        "first name": "Macartatus",
+        "paa": "<a href='/person-index/631485'>631485</a>"
+      },
+      "rels": {
+        "parents": [
+          "509770",
+          "unw34"
+        ]
+      }
+    },
+    {
+      "id": "unw62",
+      "data": {
+        "gender": "F",
+        "first name": "Unnamed wife of Stratocles",
+        "paa": "<a href='/person-index/unw62'>unw62</a>"
+      },
+      "rels": {
+        "spouses": [
+            "837785"
+        ]
+      }
+    },
+    {
+      "id": "unw34",
+      "data": {
+        "gender": "F",
+        "first name": "Unnamed daughter of Apolexis",
+        "paa": "<a href='/person-index/unw34'>unw34</a>"
+      },
+      "rels": {
+        "spouses": [
+            "509770"
+        ],
+        "children": [
+            "631485"
+        ],
+        "parents": [
+            "141055"
+        ]
+      }
+    },
+    {
+      "id": "141055",
+      "data": {
+        "gender": "M",
+        "first name": "Apolexis",
+        "paa": "<a href='/person-index/141055'>141055</a>"
+      },
+      "rels": {
+        "children": [
+          "631490",
+          "unw34",
+          "973955"
+        ]
+      }
+    },
+    {
+      "id": "631490",
+      "data": {
+        "gender": "M",
+        "first name": "Macartatus",
+        "paa": "<a href='/person-index/631490'>631490</a>"
+      },
+      "rels": {
+        "parents": [
+          "141055"
+        ]
+      }
+    },
+    {
+      "id": "973955",
+      "data": {
+        "gender": "M",
+        "first name": "Xaireleus",
+        "paa": "<a href='/person-index/973955'>973955</a>"
+      },
+      "rels": {
+        "parents": [
+          "141055"
+        ]
+      }
+    },
+    {
+      "id": "576855",
+      "data": {
+        "gender": "M",
+        "first name": "Cleocritus",
+        "paa": "<a href='/person-index/576855'>576855</a>"
+      },
+      "rels": {
+        "parents": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "101590",
+      "data": {
+        "gender": "M",
+        "first name": "Habron",
+        "paa": "<a href='/person-index/101590'>101590</a>"
+      },
+      "rels": {
+        "parents": [
+          "0"
+        ]
+      }
+    }
+  ]
+}
+
+
+</script>
+</body>
+</html>
