@@ -252,3 +252,30 @@ table {
     border: 1px solid $grey-color-light;
   }
 }
+
+.container {
+                display: grid;
+                grid-template-columns: 280px 1fr;  /* 300px for facet panel, rest for content */
+                gap: 20px;
+                max-width: 1400px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+.main-content {
+                background: white;
+                border-radius: 8px;
+                padding: 20px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .facets-panel {
+                background: white;
+                border-radius: 8px;
+                padding: 20px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                height: fit-content;
+                position: sticky;
+                top: 20px;
+            }
+.sub-item {
+  text-indent: 15px;
+}

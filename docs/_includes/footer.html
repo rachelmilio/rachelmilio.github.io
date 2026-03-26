@@ -23,12 +23,24 @@
 
       <div class="footer-col footer-col-2">
         {%- include social.html -%}
+        <ul class="contact-list">
+          <li class="p-name">{%- if site.version -%}
+              {{ site.version | escape }}
+             {%- endif -%}</li>
+          <li class="p-name">{%- if site.date -%}
+              {{ site.date | escape }}
+        {%- endif -%}</li>
+        </ul>
+        
+       
+        
       </div>
 
       <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
+        <a href="/">Attic Oratory Database</a> © 2026 by <a href="https://orcid.org/0009-0000-0420-4711">Rachel Milio</a> is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
       </div>
     </div>
+    
 
   </div>
 

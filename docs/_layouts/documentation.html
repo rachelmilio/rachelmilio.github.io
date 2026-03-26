@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+
+    {%- include header.html -%}
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="container">
+            <div class="facets-panel">
+                <h1>Contents</h1>
+                <ul>
+                    <li><a href="/docs/">Introduction</a></li>
+                    <li><a href="/docs/scope">Scope</a></li>
+                    <li><a href="/docs/technical-requirements">Technical Requirements</a></li>
+                    <li><a href="/docs/functionality">Site Functionality</a></li>
+                    <li><a href="/docs/data-provenance">Data Provenance</a></li>
+                    <li><a href="/docs/data-model">Data Model</a></li>
+                    <li><a href="/docs/data-access">Data Access</a></li>
+                    <li><a href="/docs/data-reuse">Data Reuse</a></li>
+                    <li><a href="/docs/user-contributions">User Contributions</a></li>
+                    <li><a href="/docs/system-development">System Development</a></li>
+                    <li><a href="/docs/publications">Publications</a></li>
+                    <li><a href="/docs/maintenance">Maintenance</a></li>
+                </ul>
+            </div>
+            <div class="main-content">
+                <h1 class="page-heading">{{ page.title }}</h1>
+                {{ content }}
+            </div>
+        </div>
+        
+      </div>
+    </main>
+
+    {%- include footer.html -%}
+
+  </body>
+
+</html>
