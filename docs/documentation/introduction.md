@@ -6,7 +6,7 @@ permalink: /docs
 
 Welcome to the documentation for the Attic Oratory Database. 
 
-The Attic Oratory Database is a project dedicated to showasing the corpus of Classical Athenian Oratory. This site catalogues the speeches of Attic Oratory, the events for which these speeches were written, and the people involved in these events and mentioned in these speeches. 
+The Attic Oratory Database is a project dedicated to showcasing the corpus of Classical Athenian Oratory. This site catalogues the speeches of Attic Oratory, the events for which these speeches were written, and the people involved in these events and mentioned in these speeches. 
 
 Navigate to the <a href="/index-page">Indices page</a> to see the different Indices in the project. To navigate through the available texts, use the <a href="/corpus-index">Corpus Index</a>. To navigate through the legal events, use the <a href="/event-index">Event Index</a>. To navigate through the people, use the <a href="/person-index">Person Index</a>. To navigate through the authors, used to <a href="/author-index">Author Index</a>. 
 

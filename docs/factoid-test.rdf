@@ -1,0 +1,203 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.ontologia.fr/OTB/atticlaw/"
+     xml:base="http://www.ontologia.fr/OTB/atticlaw/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:fpo="https://github.com/johnBradley501/FPO/raw/master/fpo.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:orators="http://www.ontologia.fr/OTB/classical_orators#"
+     xmlns:atticlaw="http://www.ontologia.fr/OTB/atticlaw/">
+    <owl:Ontology rdf:about="http://www.ontologia.fr/OTB/atticlaw/">
+        <owl:imports rdf:resource="https://github.com/johnBradley501/FPO/raw/master/fpo.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologia.fr/OTB/atticlaw/factoid01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologia.fr/OTB/atticlaw/factoid01">
+        <rdf:type rdf:resource="https://github.com/johnBradley501/FPO/raw/master/fpo.owl#Factoid"/>
+        <fpo:hasReference rdf:resource="http://www.ontologia.fr/OTB/atticlaw/reference01"/>
+        <fpo:hasReference rdf:resource="http://www.ontologia.fr/OTB/atticlaw/reference04"/>
+        <fpo:sourcedFrom rdf:resource="http://www.ontologia.fr/OTB/atticlaw/sourceCitation01"/>
+        <rdfs:label xml:lang="en">Factoid 01: Phano was once called Strybele</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologia.fr/OTB/atticlaw/factoid02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologia.fr/OTB/atticlaw/factoid02">
+        <rdf:type rdf:resource="https://github.com/johnBradley501/FPO/raw/master/fpo.owl#RelationshipFactoid"/>
+        <fpo:hasReference rdf:resource="http://www.ontologia.fr/OTB/atticlaw/reference02"/>
+        <fpo:hasReference rdf:resource="http://www.ontologia.fr/OTB/atticlaw/reference03"/>
+        <fpo:sourcedFrom rdf:resource="http://www.ontologia.fr/OTB/atticlaw/sourceCitation02"/>
+        <rdfs:label xml:lang="en">Factoid 02: Phano is the daughter of Neaira</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologia.fr/OTB/atticlaw/factoid03 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologia.fr/OTB/atticlaw/factoid03">
+        <rdf:type rdf:resource="https://github.com/johnBradley501/FPO/raw/master/fpo.owl#RelationshipFactoid"/>
+        <fpo:hasReference rdf:resource="http://www.ontologia.fr/OTB/atticlaw/reference05"/>
+        <fpo:hasReference rdf:resource="http://www.ontologia.fr/OTB/atticlaw/reference06"/>
+        <fpo:sourcedFrom rdf:resource="http://www.ontologia.fr/OTB/atticlaw/sourceCitation03"/>
+        <rdfs:label>Factoid 03: Phano is the daughter of Stephanus</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologia.fr/OTB/atticlaw/reference01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologia.fr/OTB/atticlaw/reference01">
+        <rdf:type rdf:resource="https://github.com/johnBradley501/FPO/raw/master/fpo.owl#PersonReference"/>
+        <fpo:referencesPerson rdf:resource="http://www.ontologia.fr/OTB/atticlaw/917520"/>
+        <fpo:hasNameInSourceAs>Φανώ</fpo:hasNameInSourceAs>
+        <rdfs:label xml:lang="en">Person Reference #1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologia.fr/OTB/atticlaw/reference02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologia.fr/OTB/atticlaw/reference02">
+        <rdf:type rdf:resource="https://github.com/johnBradley501/FPO/raw/master/fpo.owl#PersonReference"/>
+        <fpo:referencesPerson rdf:resource="http://www.ontologia.fr/OTB/atticlaw/917520"/>
+        <fpo:hasNameInSourceAs>Φανώ</fpo:hasNameInSourceAs>
+        <rdfs:label>Person Reference #2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologia.fr/OTB/atticlaw/reference03 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologia.fr/OTB/atticlaw/reference03">
+        <rdf:type rdf:resource="https://github.com/johnBradley501/FPO/raw/master/fpo.owl#PersonReference"/>
+        <fpo:referencesPerson rdf:resource="http://www.ontologia.fr/OTB/atticlaw/702905"/>
+        <fpo:hasNameInSourceAs>Νεαίρας</fpo:hasNameInSourceAs>
+        <rdfs:label>Person Reference #3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologia.fr/OTB/atticlaw/reference04 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologia.fr/OTB/atticlaw/reference04">
+        <rdf:type rdf:resource="https://github.com/johnBradley501/FPO/raw/master/fpo.owl#PersonReference"/>
+        <fpo:referencesPerson rdf:resource="http://www.ontologia.fr/OTB/atticlaw/917520"/>
+        <fpo:hasNameInSourceAs>Στρυβήλην</fpo:hasNameInSourceAs>
+        <rdfs:label>Person Reference #4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologia.fr/OTB/atticlaw/reference05 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologia.fr/OTB/atticlaw/reference05">
+        <rdf:type rdf:resource="https://github.com/johnBradley501/FPO/raw/master/fpo.owl#PersonReference"/>
+        <fpo:referencesPerson rdf:resource="http://www.ontologia.fr/OTB/atticlaw/917520"/>
+        <fpo:hasNameInSourceAs>οἱ παῖδες</fpo:hasNameInSourceAs>
+        <rdfs:label>Person Reference #5</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologia.fr/OTB/atticlaw/reference06 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologia.fr/OTB/atticlaw/reference06">
+        <rdf:type rdf:resource="https://github.com/johnBradley501/FPO/raw/master/fpo.owl#PersonReference"/>
+        <fpo:referencesPerson rdf:resource="http://www.ontologia.fr/OTB/atticlaw/834250"/>
+        <fpo:hasNameInSourceAs>Στέφανον</fpo:hasNameInSourceAs>
+        <rdfs:label>Person Reference #6</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologia.fr/OTB/atticlaw/sourceCitation01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologia.fr/OTB/atticlaw/sourceCitation01">
+        <rdf:type rdf:resource="https://github.com/johnBradley501/FPO/raw/master/fpo.owl#SourceCitation"/>
+        <fpo:fromSource rdf:resource="http://www.ontologia.fr/OTB/classical_orators#Dem_59"/>
+        <fpo:hasPlaceInSource>50</fpo:hasPlaceInSource>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologia.fr/OTB/atticlaw/sourceCitation02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologia.fr/OTB/atticlaw/sourceCitation02">
+        <rdf:type rdf:resource="https://github.com/johnBradley501/FPO/raw/master/fpo.owl#SourceCitation"/>
+        <fpo:fromSource rdf:resource="http://www.ontologia.fr/OTB/classical_orators#Dem_59"/>
+        <fpo:hasPlaceInSource>50</fpo:hasPlaceInSource>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologia.fr/OTB/atticlaw/sourceCitation03 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologia.fr/OTB/atticlaw/sourceCitation03">
+        <rdf:type rdf:resource="https://github.com/johnBradley501/FPO/raw/master/fpo.owl#SourceCitation"/>
+        <fpo:fromSource rdf:resource="http://www.ontologia.fr/OTB/classical_orators#Dem_59"/>
+        <fpo:hasPlaceInSource>119</fpo:hasPlaceInSource>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologia.fr/OTB/atticlaw/702905 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologia.fr/OTB/atticlaw/702905">
+        <rdf:type rdf:resource="https://github.com/johnBradley501/FPO/raw/master/fpo.owl#FemalePerson"/>
+        <fpo:hasDisplayName>Neaira</fpo:hasDisplayName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologia.fr/OTB/atticlaw/834250 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologia.fr/OTB/atticlaw/834250">
+        <rdf:type rdf:resource="https://github.com/johnBradley501/FPO/raw/master/fpo.owl#MalePerson"/>
+        <fpo:hasDisplayName>Stephanus</fpo:hasDisplayName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologia.fr/OTB/atticlaw/917520 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologia.fr/OTB/atticlaw/917520">
+        <rdf:type rdf:resource="https://github.com/johnBradley501/FPO/raw/master/fpo.owl#FemalePerson"/>
+        <fpo:hasDisplayName>Phano</fpo:hasDisplayName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologia.fr/OTB/classical_orators#Dem_59 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologia.fr/OTB/classical_orators#Dem_59">
+        <rdf:type rdf:resource="https://github.com/johnBradley501/FPO/raw/master/fpo.owl#Source"/>
+        <fpo:hasBibliographicEntry>Demosthenes. Demosthenis Orationes, eds. W. Rennie (Oxford: Clarendon Press, 1931), Perseus Digital Library. https://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0014.tlg059.perseus-grc1 (accessed October 7, 2025).</fpo:hasBibliographicEntry>
+        <fpo:hasSourceID>Dem59</fpo:hasSourceID>
+        <fpo:hasSourceName>κατὰ Νεαίρας</fpo:hasSourceName>
+        <rdfs:label xml:lang="en">Dem 59</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

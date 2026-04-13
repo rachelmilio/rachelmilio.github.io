@@ -4,3 +4,155 @@ title: Phano Factoid Prosopography
 permalink: /case-studies/phano-factoids
 exclude: true
 ---
+<html>
+    <head>
+        <style>
+           body { font-family: "New Athena Unicode", "Cardo", "Palatino Linotype", serif; } 
+           .header { font-size: 1.8em; text-align: center; padding-bottom: .7em;}
+           .block-meta { 
+                color: #131313; 
+                margin: 0.5rem 0;
+                font-size: 1.3em;
+                border-bottom: 2px solid #34495e;
+                padding-bottom: 1rem;
+            }
+            * {box-sizing: border-box;}
+
+            .img-zoom-container {
+                position: relative;
+                display: grid;
+                grid-template-columns: 60% 40%; 
+            }
+
+            .img-zoom-lens {
+                position: absolute;
+                border: 1px solid #d4d4d4;
+                /*set the size of the lens:*/
+                width: 100px;
+                height: 100px;
+            }
+
+            .img-zoom-result {
+                border: 1px solid #d4d4d4;
+                /*set the size of the result div:*/
+                width: 90%;
+                height: auto;
+                min-height: 300px;
+                background-repeat: no-repeat;
+            }
+            .img {
+                width: 90%;
+            }
+            .caption {
+                text-align: left;
+                padding-bottom: 2rem;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">Based on: <a href="/corpus-index/Dem_59">Dem. 59</a></div>
+        <div class="block-meta">This case study is based on the challenges surrounding the disambiguation and modelling of <a href="/person-index/917520">Phano</a> in Dem. 59. In Dem. 59, Apollodorus argues that Neaira is a foreign-born prostitute illegally living with an Athenian citizen man (Stephanus) as his wife. To support his argument, Apollodorus uses the figure of Phano, who he alleges is the daughter of Neaira being passed off as a legitimate citizen daughter.</div>
+        <div><p>Within the text of Dem. 59, we learn about multiple arguments being made about Phano's identity:</p> 
+            <ol>
+                <li>The prosecution argues that Phano was once called Strybele (Dem. 59.50)</li>
+                <li>The prosecution argues that Phano is the daughter of Neaira and therefore not a citizen (Dem 59.50)</li>
+                <li>The defense argues that Phano is the daughter of Stephanus and therefore a citizen (Dem. 59.119)</li>
+            </ol>
+        <p>To express these contrasting arguments, this case study turns to <a href="https://www.kcl.ac.uk/factoid-prosopography/about">Factoid Prosopography</a>, an approach to prosopography centered on the idea of <i>factoid</i>, or "a spot in a source that says something about a person or persons." Rather than a fact, a factoid is an assertion from a source that is neither necessarily true or untrue.</p>
+        <p>The above arguments can be extrapolated into the following factoids:</p>
+        <ul>
+            <li>Factoid 1: Phano was once called Strybele</li>
+            <li>Factoid 2: Phano is the daughter of Neaira</li>
+            <li>Factoid 3: Phano is the daughter of Stephanus</li>
+        </ul>
+        <p>On this page, you can examine visualizations of the Phano factoids, modelled through the <a href="https://raw.githubusercontent.com/johnBradley501/FPO/refs/heads/master/fpo.owl">Factoid Prosopography Ontology</a>. These visualizations were created with the <a href="http://talos-ai4ssh.eu/RDF_Viewer/">TALOS RDF Graph Viewer</a>. You can also download the RDF used to create these visualizations.</p>
+        </div>
+        <div class="caption"><h3>Visualization of all Factoids:</h3></div>
+        <div class="img-zoom-container">
+            <img class="img" id="full-visualization" src="/images/all_factoids.png" alt="Visualization of all Phano factoids">
+            <div id="full-result" class="img-zoom-result"></div>
+        </div>
+        
+        <div class="caption"><h3>Factoid 1: Phano was once called Strybele</h3></div>
+        <div class="img-zoom-container">
+            <img class="img" id="factoid1" src="/images/factoid_1.png" alt="Visualization of Factoid 1">
+            <div id="result1" class="img-zoom-result"></div>
+        </div>
+        
+        <div class="caption"><h3>Factoid 2: Phano is the daughter of Neaira</h3></div>
+        <div class="img-zoom-container">
+            <img class="img" id="factoid2" src="/images/factoid_2.png" alt="Visualization of Factoid 2">
+            <div id="result2" class="img-zoom-result"></div>
+        </div>
+        
+        <div class="caption"><h3>Factoid 3: Phano is the daughter of Stephanus</h3></div>
+        <div class="img-zoom-container">
+            <img class="img" id="factoid3" src="/images/factoid_3.png" alt="Visualization of Factoid 3">
+            <div id="result3" class="img-zoom-result"></div>
+        </div>
+        
+        <script>
+            function imageZoom(imgID, resultID) {
+  var img, lens, result, cx, cy;
+  img = document.getElementById(imgID);
+  result = document.getElementById(resultID);
+  /* Create lens: */
+  lens = document.createElement("DIV");
+  lens.setAttribute("class", "img-zoom-lens");
+  /* Insert lens: */
+  img.parentElement.insertBefore(lens, img);
+  /* Calculate the ratio between result DIV and lens: */
+  cx = result.offsetWidth / lens.offsetWidth;
+  cy = result.offsetHeight / lens.offsetHeight;
+  /* Set background properties for the result DIV */
+  result.style.backgroundImage = "url('" + img.src + "')";
+  result.style.backgroundSize = (img.width * cx) + "px " + (img.height * cy) + "px";
+  /* Execute a function when someone moves the cursor over the image, or the lens: */
+  lens.addEventListener("mousemove", moveLens);
+  img.addEventListener("mousemove", moveLens);
+  /* And also for touch screens: */
+  lens.addEventListener("touchmove", moveLens);
+  img.addEventListener("touchmove", moveLens);
+  function moveLens(e) {
+    var pos, x, y;
+    /* Prevent any other actions that may occur when moving over the image */
+    e.preventDefault();
+    /* Get the cursor's x and y positions: */
+    pos = getCursorPos(e);
+    /* Calculate the position of the lens: */
+    x = pos.x - (lens.offsetWidth / 2);
+    y = pos.y - (lens.offsetHeight / 2);
+    /* Prevent the lens from being positioned outside the image: */
+    if (x > img.width - lens.offsetWidth) {x = img.width - lens.offsetWidth;}
+    if (x < 0) {x = 0;}
+    if (y > img.height - lens.offsetHeight) {y = img.height - lens.offsetHeight;}
+    if (y < 0) {y = 0;}
+    /* Set the position of the lens: */
+    lens.style.left = x + "px";
+    lens.style.top = y + "px";
+    /* Display what the lens "sees": */
+    result.style.backgroundPosition = "-" + (x * cx) + "px -" + (y * cy) + "px";
+  }
+  function getCursorPos(e) {
+    var a, x = 0, y = 0;
+    e = e || window.event;
+    /* Get the x and y positions of the image: */
+    a = img.getBoundingClientRect();
+    /* Calculate the cursor's x and y coordinates, relative to the image: */
+    x = e.pageX - a.left;
+    y = e.pageY - a.top;
+    /* Consider any page scrolling: */
+    x = x - window.pageXOffset;
+    y = y - window.pageYOffset;
+    return {x : x, y : y};
+  }
+}
+window.addEventListener('load', function() {
+                imageZoom("full-visualization", "full-result");
+                imageZoom("factoid1", "result1");
+                imageZoom("factoid2", "result2");
+                imageZoom("factoid3", "result3");
+            });
+        </script>
+    </body>
+</html>
