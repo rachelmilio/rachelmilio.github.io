@@ -1,0 +1,1510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Ontoterminology: Athenian-Legal-Participants -->
+<!-- Author: Rachel Milio -->
+<!-- Creation date: April 2, 2025 -->
+<!-- Export date: October 10, 2025 time: 10:09:46 AM -->
+<!-- TEDI version: 4.1 -->
+<!-- http://ontoterminology.com/tedi -->
+<rdf:RDF xmlns="http://www.ontologia.fr/OTB/legal_participants#"
+    xml:base="http://www.ontologia.fr/OTB/legal_participants"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:xml="http://www.w3.org/XML/1998/namespace"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:otv="http://www.ontologia.fr/OTB/otv#"
+    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+    xmlns:vann="http://purl.org/vocab/vann/"
+    xmlns:ontolex="http://www.w3.org/ns/lemon/ontolex#">
+
+	<!-- 
+	//////////////////////////////////////////////////////////
+	//
+	// SKOS
+	//
+	//////////////////////////////////////////////////////////
+	-->
+
+	<!--  SKOS Concept Scheme -->
+
+    <skos:ConceptScheme rdf:about="http://www.ontologia.fr/OTB/legal_participants">
+        <dc:title>Athenian-Legal-Participants</dc:title>
+        <dc:description>This is version 2.0 of a database for the PhD "Semantic Annotation and Attic Oratory" that defines the terms used to designate participants in Classical Athenian courts c. 419 BC to 323 BC. I define a legal participant as a person involved in a court proceeding without being an appointed or elected official. This work draws upon the corpus of Attic oratory as well as The Law of Ancient Athens by David D. Phillips and the Shape of Athenian Law by S.C. Todd. </dc:description>
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-04-02</dc:issued>
+        <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-10-10</dc:modified>
+        <dc:creator>Rachel Milio</dc:creator>
+        <dc:publisher>University of Crete</dc:publisher>
+    </skos:ConceptScheme>
+
+	<!--  SKOS Concepts -->
+
+    <skos:Concept rdf:about="#Legal_Participants_participates_in_suit_but_is_not_directly_affected_by_outcome_witnesses_the_plaintiff_summoning_the_defendant_must_be_an_adult_male_citizen_can_be_prosecuted_for_dishonesty">
+        <skos:inScheme rdf:resource="http://www.ontologia.fr/OTB/legal_participants"/>
+        <rdfs:label xml:lang="en">summons-witness</rdfs:label>
+        <skos:prefLabel xml:lang="en">summons-witness</skos:prefLabel>
+        <skos:definition xml:lang="en">Legal participant who participates in suit but is not directly affected by outcome, witnesses the plaintiff summoning the defendant, must be an adult male citizen, can be prosecuted for dishonesty.</skos:definition>
+        <rdfs:label xml:lang="grc">κλητήρ</rdfs:label>
+        <skos:prefLabel xml:lang="grc">κλητήρ</skos:prefLabel>
+        <skos:definition xml:lang="grc">Legal participant who participates in suit but is not directly affected by outcome, witnesses the plaintiff summoning the defendant, must be an adult male citizen, can be prosecuted for dishonesty.</skos:definition>
+        <skos:broader rdf:resource="#Legal_Participants"/>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="#Legal_Participants_is_able_to_win_or_lose_legal_suit_initiates_lawsuit_against_another_must_be_an_adult_male_citizen_or_metic_receives_a_monetary_penalty_if_prosecution_fails">
+        <skos:inScheme rdf:resource="http://www.ontologia.fr/OTB/legal_participants"/>
+        <rdfs:label xml:lang="en">prosecutor</rdfs:label>
+        <skos:altLabel xml:lang="en">prosecutor</skos:altLabel>
+        <skos:definition xml:lang="en">Litigant who initiates lawsuit against another, must be an adult male citizen or metic, receives a monetary penalty if prosecution fails.</skos:definition>
+        <rdfs:label xml:lang="en">plaintiff</rdfs:label>
+        <skos:prefLabel xml:lang="en">plaintiff</skos:prefLabel>
+        <skos:definition xml:lang="en">Litigant who initiates lawsuit against another, must be an adult male citizen or metic, receives a monetary penalty if prosecution fails.</skos:definition>
+        <rdfs:label xml:lang="grc">διώκων</rdfs:label>
+        <skos:prefLabel xml:lang="grc">διώκων</skos:prefLabel>
+        <skos:definition xml:lang="grc">ἀντίδικος who initiates lawsuit against another, must be an adult male citizen or metic, receives a monetary penalty if prosecution fails.</skos:definition>
+        <skos:broader rdf:resource="#Legal_Participants_is_able_to_win_or_lose_legal_suit"/>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="#Legal_Participants_is_able_to_win_or_lose_legal_suit">
+        <skos:inScheme rdf:resource="http://www.ontologia.fr/OTB/legal_participants"/>
+        <rdfs:label xml:lang="en">litigant</rdfs:label>
+        <skos:prefLabel xml:lang="en">litigant</skos:prefLabel>
+        <skos:definition xml:lang="en">Legal participant who is able to win or lose legal suit.</skos:definition>
+        <rdfs:label xml:lang="grc">ἀντίδικος</rdfs:label>
+        <skos:prefLabel xml:lang="grc">ἀντίδικος</skos:prefLabel>
+        <skos:definition xml:lang="grc">Legal participant who is able to win or lose legal suit.</skos:definition>
+        <skos:broader rdf:resource="#Legal_Participants"/>
+        <skos:narrower rdf:resource="#Legal_Participants_is_able_to_win_or_lose_legal_suit_initiates_lawsuit_against_another_must_be_an_adult_male_citizen_or_metic_receives_a_monetary_penalty_if_prosecution_fails"/>
+        <skos:narrower rdf:resource="#Legal_Participants_is_able_to_win_or_lose_legal_suit_has_lawsuit_initiated_against_by_other_can_be_any_gender_or_citizenship_status_receives_a_punishment_if_convicted"/>
+        <skos:narrower rdf:resource="#Legal_Participants_is_able_to_win_or_lose_legal_suit_makes_a_competing_claim_for_an_inheritance_must_be_an_adult_male_citizen_loses_deposit_if_decision_is_unfavorable"/>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="#Legal_Participants_participates_in_suit_but_is_not_directly_affected_by_outcome_gives_testimony_in_court_through_witness_depositions_to_support_litigant_must_be_an_adult_male_citizen_or_metic_can_be_prosecuted_for_dishonesty">
+        <skos:inScheme rdf:resource="http://www.ontologia.fr/OTB/legal_participants"/>
+        <rdfs:label xml:lang="en">witness</rdfs:label>
+        <skos:prefLabel xml:lang="en">witness</skos:prefLabel>
+        <skos:definition xml:lang="en">Legal participant who participates in suit but is not directly affected by outcome, gives testimony in court through witness depositions to support litigant, must be an adult male citizen or metic, can be prosecuted for dishonesty.</skos:definition>
+        <rdfs:label xml:lang="grc">μάρτυς</rdfs:label>
+        <skos:prefLabel xml:lang="grc">μάρτυς</skos:prefLabel>
+        <skos:definition xml:lang="grc">Legal participant who participates in suit but is not directly affected by outcome, gives testimony in court through witness depositions to support litigant, must be an adult male citizen or metic, can be prosecuted for dishonesty.</skos:definition>
+        <skos:broader rdf:resource="#Legal_Participants"/>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="#Legal_Participants">
+        <skos:inScheme rdf:resource="http://www.ontologia.fr/OTB/legal_participants"/>
+        <skos:topConceptOf rdf:resource="http://www.ontologia.fr/OTB/legal_participants"/>
+        <rdfs:label xml:lang="en">legal participant</rdfs:label>
+        <skos:prefLabel xml:lang="en">legal participant</skos:prefLabel>
+        <skos:definition xml:lang="en">.</skos:definition>
+        <rdfs:label xml:lang="grc">legal participant</rdfs:label>
+        <skos:prefLabel xml:lang="grc">legal participant</skos:prefLabel>
+        <skos:definition xml:lang="grc">.</skos:definition>
+        <skos:narrower rdf:resource="#Legal_Participants_participates_in_suit_but_is_not_directly_affected_by_outcome_witnesses_the_plaintiff_summoning_the_defendant_must_be_an_adult_male_citizen_can_be_prosecuted_for_dishonesty"/>
+        <skos:narrower rdf:resource="#Legal_Participants_is_able_to_win_or_lose_legal_suit"/>
+        <skos:narrower rdf:resource="#Legal_Participants_participates_in_suit_but_is_not_directly_affected_by_outcome_delivers_supporting_speeches_for_litigant_must_be_an_adult_male_citizen"/>
+        <skos:narrower rdf:resource="#Legal_Participants_participates_in_suit_but_is_not_directly_affected_by_outcome_gives_testimony_in_court_through_witness_depositions_to_support_litigant_must_be_an_adult_male_citizen_or_metic_can_be_prosecuted_for_dishonesty"/>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="#Legal_Participants_is_able_to_win_or_lose_legal_suit_has_lawsuit_initiated_against_by_other_can_be_any_gender_or_citizenship_status_receives_a_punishment_if_convicted">
+        <skos:inScheme rdf:resource="http://www.ontologia.fr/OTB/legal_participants"/>
+        <rdfs:label xml:lang="en">defendant</rdfs:label>
+        <skos:prefLabel xml:lang="en">defendant</skos:prefLabel>
+        <skos:definition xml:lang="en">Litigant who has lawsuit initiated against by other, can be any gender or citizenship status, receives a punishment if convicted.</skos:definition>
+        <rdfs:label xml:lang="grc">φεύγων</rdfs:label>
+        <skos:prefLabel xml:lang="grc">φεύγων</skos:prefLabel>
+        <skos:definition xml:lang="grc">ἀντίδικος who has lawsuit initiated against by other, can be any gender or citizenship status, receives a punishment if convicted.</skos:definition>
+        <skos:broader rdf:resource="#Legal_Participants_is_able_to_win_or_lose_legal_suit"/>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="#Legal_Participants_participates_in_suit_but_is_not_directly_affected_by_outcome_delivers_supporting_speeches_for_litigant_must_be_an_adult_male_citizen">
+        <skos:inScheme rdf:resource="http://www.ontologia.fr/OTB/legal_participants"/>
+        <rdfs:label xml:lang="en">synegoros</rdfs:label>
+        <skos:altLabel xml:lang="en">synegoros</skos:altLabel>
+        <skos:definition xml:lang="en">Legal participant who participates in suit but is not directly affected by outcome, delivers supporting speeches for litigant, must be an adult male citizen.</skos:definition>
+        <rdfs:label xml:lang="en">advocate</rdfs:label>
+        <skos:prefLabel xml:lang="en">advocate</skos:prefLabel>
+        <skos:definition xml:lang="en">Legal participant who participates in suit but is not directly affected by outcome, delivers supporting speeches for litigant, must be an adult male citizen.</skos:definition>
+        <rdfs:label xml:lang="grc">συνήγορος</rdfs:label>
+        <skos:prefLabel xml:lang="grc">συνήγορος</skos:prefLabel>
+        <skos:definition xml:lang="grc">Legal participant who participates in suit but is not directly affected by outcome, delivers supporting speeches for litigant, must be an adult male citizen.</skos:definition>
+        <skos:broader rdf:resource="#Legal_Participants"/>
+    </skos:Concept>
+
+    <skos:Concept rdf:about="#Legal_Participants_is_able_to_win_or_lose_legal_suit_makes_a_competing_claim_for_an_inheritance_must_be_an_adult_male_citizen_loses_deposit_if_decision_is_unfavorable">
+        <skos:inScheme rdf:resource="http://www.ontologia.fr/OTB/legal_participants"/>
+        <rdfs:label xml:lang="en">claimant</rdfs:label>
+        <skos:prefLabel xml:lang="en">claimant</skos:prefLabel>
+        <skos:definition xml:lang="en">Litigant who makes a competing claim for an inheritance, must be an adult male citizen, loses deposit if decision is unfavorable.</skos:definition>
+        <rdfs:label xml:lang="grc">ἀμφισβητῶν</rdfs:label>
+        <skos:prefLabel xml:lang="grc">ἀμφισβητῶν</skos:prefLabel>
+        <skos:definition xml:lang="grc">ἀντίδικος who makes a competing claim for an inheritance, must be an adult male citizen, loses deposit if decision is unfavorable.</skos:definition>
+        <skos:example xml:lang="grc">"οὐ γὰρ δήπου συκοφαντεῖν γε βουλόμενος ἀπέγραψα μὲν ἂν πένθ᾽ ἡμιμναίων ἄξια ἀνδράποδα, ὡς αὐτὸς ὁ ἀμφισβητῶν τετίμηται αὐτά, ἐκινδύνευον δ᾽ ἂν περί τε χιλίων δραχμῶν καὶ τοῦ μηδέποτε μηδένα αὖθις ὑπὲρ ἐμαυτοῦ γράψασθαι:" (Dem. 53.1)</skos:example>
+        <skos:broader rdf:resource="#Legal_Participants_is_able_to_win_or_lose_legal_suit"/>
+    </skos:Concept>
+
+	<!-- 
+	//////////////////////////////////////////////////////////
+	//
+	// OWL
+	//
+	//////////////////////////////////////////////////////////
+	-->
+
+	<!--  OWL Ontology -->
+
+    <owl:Ontology rdf:about="http://www.ontologia.fr/OTB/legal_participants">
+        <dc:title>Athenian-Legal-Participants</dc:title>
+        <dc:description>This is version 2.0 of a database for the PhD "Semantic Annotation and Attic Oratory" that defines the terms used to designate participants in Classical Athenian courts c. 419 BC to 323 BC. I define a legal participant as a person involved in a court proceeding without being an appointed or elected official. This work draws upon the corpus of Attic oratory as well as The Law of Ancient Athens by David D. Phillips and the Shape of Athenian Law by S.C. Todd. </dc:description>
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-04-02</dc:issued>
+        <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-10-10</dc:modified>
+        <dc:creator>Rachel Milio</dc:creator>
+        <dc:publisher>University of Crete</dc:publisher>
+    </owl:Ontology>
+
+	<!--  OWL Object Properties -->
+
+	<!--  OWL Data Properties -->
+
+	<!--  OWL Classes -->
+
+    <owl:Class rdf:about="#Legal_Participants_participates_in_suit_but_is_not_directly_affected_by_outcome_witnesses_the_plaintiff_summoning_the_defendant_must_be_an_adult_male_citizen_can_be_prosecuted_for_dishonesty">
+        <rdfs:label xml:lang="en">summons-witness</rdfs:label>
+        <skos:prefLabel xml:lang="en">summons-witness</skos:prefLabel>
+        <skos:definition xml:lang="en">Legal participant who participates in suit but is not directly affected by outcome, witnesses the plaintiff summoning the defendant, must be an adult male citizen, can be prosecuted for dishonesty.</skos:definition>
+        <rdfs:label xml:lang="grc">κλητήρ</rdfs:label>
+        <skos:prefLabel xml:lang="grc">κλητήρ</skos:prefLabel>
+        <skos:definition xml:lang="grc">Legal participant who participates in suit but is not directly affected by outcome, witnesses the plaintiff summoning the defendant, must be an adult male citizen, can be prosecuted for dishonesty.</skos:definition>
+        <rdfs:subClassOf rdf:resource="#Legal_Participants"/>
+        <owl:disjointWith rdf:resource="#Legal_Participants_participates_in_suit_but_is_not_directly_affected_by_outcome_gives_testimony_in_court_through_witness_depositions_to_support_litigant_must_be_an_adult_male_citizen_or_metic_can_be_prosecuted_for_dishonesty"/>
+        <owl:disjointWith rdf:resource="#Legal_Participants_participates_in_suit_but_is_not_directly_affected_by_outcome_delivers_supporting_speeches_for_litigant_must_be_an_adult_male_citizen"/>
+        <owl:disjointWith rdf:resource="#Legal_Participants_is_able_to_win_or_lose_legal_suit"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#ownDifference"/>
+                <owl:hasValue rdf:resource="#who_participates_in_suit_but_is_not_directly_affected_by_outcome"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#ownDifference"/>
+                <owl:hasValue rdf:resource="#witnesses_the_plaintiff_summoning_the_defendant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#ownDifference"/>
+                <owl:hasValue rdf:resource="#must_be_an_adult_male_citizen"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#ownDifference"/>
+                <owl:hasValue rdf:resource="#can_be_prosecuted_for_dishonesty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+    <owl:Class rdf:about="#Legal_Participants_is_able_to_win_or_lose_legal_suit_initiates_lawsuit_against_another_must_be_an_adult_male_citizen_or_metic_receives_a_monetary_penalty_if_prosecution_fails">
+        <rdfs:label xml:lang="en">prosecutor</rdfs:label>
+        <skos:altLabel xml:lang="en">prosecutor</skos:altLabel>
+        <skos:definition xml:lang="en">Litigant who initiates lawsuit against another, must be an adult male citizen or metic, receives a monetary penalty if prosecution fails.</skos:definition>
+        <rdfs:label xml:lang="en">plaintiff</rdfs:label>
+        <skos:prefLabel xml:lang="en">plaintiff</skos:prefLabel>
+        <skos:definition xml:lang="en">Litigant who initiates lawsuit against another, must be an adult male citizen or metic, receives a monetary penalty if prosecution fails.</skos:definition>
+        <rdfs:label xml:lang="grc">διώκων</rdfs:label>
+        <skos:prefLabel xml:lang="grc">διώκων</skos:prefLabel>
+        <skos:definition xml:lang="grc">ἀντίδικος who initiates lawsuit against another, must be an adult male citizen or metic, receives a monetary penalty if prosecution fails.</skos:definition>
+        <rdfs:subClassOf rdf:resource="#Legal_Participants_is_able_to_win_or_lose_legal_suit"/>
+        <owl:disjointWith rdf:resource="#Legal_Participants_is_able_to_win_or_lose_legal_suit_makes_a_competing_claim_for_an_inheritance_must_be_an_adult_male_citizen_loses_deposit_if_decision_is_unfavorable"/>
+        <owl:disjointWith rdf:resource="#Legal_Participants_is_able_to_win_or_lose_legal_suit_has_lawsuit_initiated_against_by_other_can_be_any_gender_or_citizenship_status_receives_a_punishment_if_convicted"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#ownDifference"/>
+                <owl:hasValue rdf:resource="#who_initiates_lawsuit_against_another"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#ownDifference"/>
+                <owl:hasValue rdf:resource="#must_be_an_adult_male_citizen_or_metic"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#ownDifference"/>
+                <owl:hasValue rdf:resource="#receives_a_monetary_penalty_if_prosecution_fails"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+    <owl:Class rdf:about="#Legal_Participants_is_able_to_win_or_lose_legal_suit">
+        <rdfs:label xml:lang="en">litigant</rdfs:label>
+        <skos:prefLabel xml:lang="en">litigant</skos:prefLabel>
+        <skos:definition xml:lang="en">Legal participant who is able to win or lose legal suit.</skos:definition>
+        <rdfs:label xml:lang="grc">ἀντίδικος</rdfs:label>
+        <skos:prefLabel xml:lang="grc">ἀντίδικος</skos:prefLabel>
+        <skos:definition xml:lang="grc">Legal participant who is able to win or lose legal suit.</skos:definition>
+        <rdfs:subClassOf rdf:resource="#Legal_Participants"/>
+        <owl:disjointWith rdf:resource="#Legal_Participants_participates_in_suit_but_is_not_directly_affected_by_outcome_witnesses_the_plaintiff_summoning_the_defendant_must_be_an_adult_male_citizen_can_be_prosecuted_for_dishonesty"/>
+        <owl:disjointWith rdf:resource="#Legal_Participants_participates_in_suit_but_is_not_directly_affected_by_outcome_gives_testimony_in_court_through_witness_depositions_to_support_litigant_must_be_an_adult_male_citizen_or_metic_can_be_prosecuted_for_dishonesty"/>
+        <owl:disjointWith rdf:resource="#Legal_Participants_participates_in_suit_but_is_not_directly_affected_by_outcome_delivers_supporting_speeches_for_litigant_must_be_an_adult_male_citizen"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#ownDifference"/>
+                <owl:hasValue rdf:resource="#who_is_able_to_win_or_lose_legal_suit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+    <owl:Class rdf:about="#Legal_Participants_participates_in_suit_but_is_not_directly_affected_by_outcome_gives_testimony_in_court_through_witness_depositions_to_support_litigant_must_be_an_adult_male_citizen_or_metic_can_be_prosecuted_for_dishonesty">
+        <rdfs:label xml:lang="en">witness</rdfs:label>
+        <skos:prefLabel xml:lang="en">witness</skos:prefLabel>
+        <skos:definition xml:lang="en">Legal participant who participates in suit but is not directly affected by outcome, gives testimony in court through witness depositions to support litigant, must be an adult male citizen or metic, can be prosecuted for dishonesty.</skos:definition>
+        <rdfs:label xml:lang="grc">μάρτυς</rdfs:label>
+        <skos:prefLabel xml:lang="grc">μάρτυς</skos:prefLabel>
+        <skos:definition xml:lang="grc">Legal participant who participates in suit but is not directly affected by outcome, gives testimony in court through witness depositions to support litigant, must be an adult male citizen or metic, can be prosecuted for dishonesty.</skos:definition>
+        <rdfs:subClassOf rdf:resource="#Legal_Participants"/>
+        <owl:disjointWith rdf:resource="#Legal_Participants_participates_in_suit_but_is_not_directly_affected_by_outcome_witnesses_the_plaintiff_summoning_the_defendant_must_be_an_adult_male_citizen_can_be_prosecuted_for_dishonesty"/>
+        <owl:disjointWith rdf:resource="#Legal_Participants_participates_in_suit_but_is_not_directly_affected_by_outcome_delivers_supporting_speeches_for_litigant_must_be_an_adult_male_citizen"/>
+        <owl:disjointWith rdf:resource="#Legal_Participants_is_able_to_win_or_lose_legal_suit"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#ownDifference"/>
+                <owl:hasValue rdf:resource="#who_participates_in_suit_but_is_not_directly_affected_by_outcome"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#ownDifference"/>
+                <owl:hasValue rdf:resource="#gives_testimony_in_court_through_witness_depositions_to_support_litigant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#ownDifference"/>
+                <owl:hasValue rdf:resource="#must_be_an_adult_male_citizen_or_metic"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#ownDifference"/>
+                <owl:hasValue rdf:resource="#can_be_prosecuted_for_dishonesty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+    <owl:Class rdf:about="#Legal_Participants">
+        <rdfs:label xml:lang="en">legal participant</rdfs:label>
+        <skos:prefLabel xml:lang="en">legal participant</skos:prefLabel>
+        <skos:definition xml:lang="en">.</skos:definition>
+        <rdfs:label xml:lang="grc">legal participant</rdfs:label>
+        <skos:prefLabel xml:lang="grc">legal participant</skos:prefLabel>
+        <skos:definition xml:lang="grc">.</skos:definition>
+    </owl:Class>
+
+    <owl:Class rdf:about="#Legal_Participants_is_able_to_win_or_lose_legal_suit_has_lawsuit_initiated_against_by_other_can_be_any_gender_or_citizenship_status_receives_a_punishment_if_convicted">
+        <rdfs:label xml:lang="en">defendant</rdfs:label>
+        <skos:prefLabel xml:lang="en">defendant</skos:prefLabel>
+        <skos:definition xml:lang="en">Litigant who has lawsuit initiated against by other, can be any gender or citizenship status, receives a punishment if convicted.</skos:definition>
+        <rdfs:label xml:lang="grc">φεύγων</rdfs:label>
+        <skos:prefLabel xml:lang="grc">φεύγων</skos:prefLabel>
+        <skos:definition xml:lang="grc">ἀντίδικος who has lawsuit initiated against by other, can be any gender or citizenship status, receives a punishment if convicted.</skos:definition>
+        <rdfs:subClassOf rdf:resource="#Legal_Participants_is_able_to_win_or_lose_legal_suit"/>
+        <owl:disjointWith rdf:resource="#Legal_Participants_is_able_to_win_or_lose_legal_suit_makes_a_competing_claim_for_an_inheritance_must_be_an_adult_male_citizen_loses_deposit_if_decision_is_unfavorable"/>
+        <owl:disjointWith rdf:resource="#Legal_Participants_is_able_to_win_or_lose_legal_suit_initiates_lawsuit_against_another_must_be_an_adult_male_citizen_or_metic_receives_a_monetary_penalty_if_prosecution_fails"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#ownDifference"/>
+                <owl:hasValue rdf:resource="#who_has_lawsuit_initiated_against_by_other"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#ownDifference"/>
+                <owl:hasValue rdf:resource="#can_be_any_gender_or_citizenship_status"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#ownDifference"/>
+                <owl:hasValue rdf:resource="#receives_a_punishment_if_convicted"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+    <owl:Class rdf:about="#Legal_Participants_participates_in_suit_but_is_not_directly_affected_by_outcome_delivers_supporting_speeches_for_litigant_must_be_an_adult_male_citizen">
+        <rdfs:label xml:lang="en">synegoros</rdfs:label>
+        <skos:altLabel xml:lang="en">synegoros</skos:altLabel>
+        <skos:definition xml:lang="en">Legal participant who participates in suit but is not directly affected by outcome, delivers supporting speeches for litigant, must be an adult male citizen.</skos:definition>
+        <rdfs:label xml:lang="en">advocate</rdfs:label>
+        <skos:prefLabel xml:lang="en">advocate</skos:prefLabel>
+        <skos:definition xml:lang="en">Legal participant who participates in suit but is not directly affected by outcome, delivers supporting speeches for litigant, must be an adult male citizen.</skos:definition>
+        <rdfs:label xml:lang="grc">συνήγορος</rdfs:label>
+        <skos:prefLabel xml:lang="grc">συνήγορος</skos:prefLabel>
+        <skos:definition xml:lang="grc">Legal participant who participates in suit but is not directly affected by outcome, delivers supporting speeches for litigant, must be an adult male citizen.</skos:definition>
+        <rdfs:subClassOf rdf:resource="#Legal_Participants"/>
+        <owl:disjointWith rdf:resource="#Legal_Participants_participates_in_suit_but_is_not_directly_affected_by_outcome_gives_testimony_in_court_through_witness_depositions_to_support_litigant_must_be_an_adult_male_citizen_or_metic_can_be_prosecuted_for_dishonesty"/>
+        <owl:disjointWith rdf:resource="#Legal_Participants_participates_in_suit_but_is_not_directly_affected_by_outcome_witnesses_the_plaintiff_summoning_the_defendant_must_be_an_adult_male_citizen_can_be_prosecuted_for_dishonesty"/>
+        <owl:disjointWith rdf:resource="#Legal_Participants_is_able_to_win_or_lose_legal_suit"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#ownDifference"/>
+                <owl:hasValue rdf:resource="#who_participates_in_suit_but_is_not_directly_affected_by_outcome"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#ownDifference"/>
+                <owl:hasValue rdf:resource="#delivers_supporting_speeches_for_litigant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#ownDifference"/>
+                <owl:hasValue rdf:resource="#must_be_an_adult_male_citizen"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+    <owl:Class rdf:about="#Legal_Participants_is_able_to_win_or_lose_legal_suit_makes_a_competing_claim_for_an_inheritance_must_be_an_adult_male_citizen_loses_deposit_if_decision_is_unfavorable">
+        <rdfs:label xml:lang="en">claimant</rdfs:label>
+        <skos:prefLabel xml:lang="en">claimant</skos:prefLabel>
+        <skos:definition xml:lang="en">Litigant who makes a competing claim for an inheritance, must be an adult male citizen, loses deposit if decision is unfavorable.</skos:definition>
+        <rdfs:label xml:lang="grc">ἀμφισβητῶν</rdfs:label>
+        <skos:prefLabel xml:lang="grc">ἀμφισβητῶν</skos:prefLabel>
+        <skos:definition xml:lang="grc">ἀντίδικος who makes a competing claim for an inheritance, must be an adult male citizen, loses deposit if decision is unfavorable.</skos:definition>
+        <skos:example xml:lang="grc">"οὐ γὰρ δήπου συκοφαντεῖν γε βουλόμενος ἀπέγραψα μὲν ἂν πένθ᾽ ἡμιμναίων ἄξια ἀνδράποδα, ὡς αὐτὸς ὁ ἀμφισβητῶν τετίμηται αὐτά, ἐκινδύνευον δ᾽ ἂν περί τε χιλίων δραχμῶν καὶ τοῦ μηδέποτε μηδένα αὖθις ὑπὲρ ἐμαυτοῦ γράψασθαι:" (Dem. 53.1)</skos:example>
+        <rdfs:subClassOf rdf:resource="#Legal_Participants_is_able_to_win_or_lose_legal_suit"/>
+        <owl:disjointWith rdf:resource="#Legal_Participants_is_able_to_win_or_lose_legal_suit_initiates_lawsuit_against_another_must_be_an_adult_male_citizen_or_metic_receives_a_monetary_penalty_if_prosecution_fails"/>
+        <owl:disjointWith rdf:resource="#Legal_Participants_is_able_to_win_or_lose_legal_suit_has_lawsuit_initiated_against_by_other_can_be_any_gender_or_citizenship_status_receives_a_punishment_if_convicted"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#ownDifference"/>
+                <owl:hasValue rdf:resource="#who_makes_a_competing_claim_for_an_inheritance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#ownDifference"/>
+                <owl:hasValue rdf:resource="#must_be_an_adult_male_citizen"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#ownDifference"/>
+                <owl:hasValue rdf:resource="#loses_deposit_if_decision_is_unfavorable"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+	<!--  OWL Individuals -->
+
+
+	<!-- 
+	//////////////////////////////////////////////////////////
+	//
+	// OntoLex-Lemon
+	//
+	//////////////////////////////////////////////////////////
+	-->
+
+    <ontolex:LexicalEntry rdf:about="#summons-witness_en">
+        <ontolex:lexicalForm>
+            <ontolex:Form rdf:about="#form_summons-witness_en">
+                <ontolex:writtenRep xml:lang="en">summons-witness</ontolex:writtenRep>
+            </ontolex:Form>
+        </ontolex:lexicalForm>
+        <ontolex:evokes>
+            <ontolex:LexicalConcept rdf:about="#lexical_concept_summons-witness_en">
+                <ontolex:isEvokedBy rdf:resource="#summons-witness_en"/>
+                <skos:definition xml:lang="en">Legal participant who participates in suit but is not directly affected by outcome, witnesses the plaintiff summoning the defendant, must be an adult male citizen, can be prosecuted for dishonesty.</skos:definition>
+            </ontolex:LexicalConcept>
+        </ontolex:evokes>
+        <ontolex:denotes rdf:resource="#Legal_Participants_participates_in_suit_but_is_not_directly_affected_by_outcome_witnesses_the_plaintiff_summoning_the_defendant_must_be_an_adult_male_citizen_can_be_prosecuted_for_dishonesty"/>
+    </ontolex:LexicalEntry>
+
+    <ontolex:LexicalEntry rdf:about="#synegoros_en">
+        <ontolex:lexicalForm>
+            <ontolex:Form rdf:about="#form_synegoros_en">
+                <ontolex:writtenRep xml:lang="en">synegoros</ontolex:writtenRep>
+            </ontolex:Form>
+        </ontolex:lexicalForm>
+        <ontolex:evokes>
+            <ontolex:LexicalConcept rdf:about="#lexical_concept_synegoros_en">
+                <ontolex:isEvokedBy rdf:resource="#synegoros_en"/>
+                <skos:definition xml:lang="en">Legal participant who participates in suit but is not directly affected by outcome, delivers supporting speeches for litigant, must be an adult male citizen.</skos:definition>
+            </ontolex:LexicalConcept>
+        </ontolex:evokes>
+        <ontolex:denotes rdf:resource="#Legal_Participants_participates_in_suit_but_is_not_directly_affected_by_outcome_delivers_supporting_speeches_for_litigant_must_be_an_adult_male_citizen"/>
+    </ontolex:LexicalEntry>
+
+    <ontolex:LexicalEntry rdf:about="#claimant_en">
+        <ontolex:lexicalForm>
+            <ontolex:Form rdf:about="#form_claimant_en">
+                <ontolex:writtenRep xml:lang="en">claimant</ontolex:writtenRep>
+            </ontolex:Form>
+        </ontolex:lexicalForm>
+        <ontolex:evokes>
+            <ontolex:LexicalConcept rdf:about="#lexical_concept_claimant_en">
+                <ontolex:isEvokedBy rdf:resource="#claimant_en"/>
+                <skos:definition xml:lang="en">Litigant who makes a competing claim for an inheritance, must be an adult male citizen, loses deposit if decision is unfavorable.</skos:definition>
+            </ontolex:LexicalConcept>
+        </ontolex:evokes>
+        <ontolex:denotes rdf:resource="#Legal_Participants_is_able_to_win_or_lose_legal_suit_makes_a_competing_claim_for_an_inheritance_must_be_an_adult_male_citizen_loses_deposit_if_decision_is_unfavorable"/>
+    </ontolex:LexicalEntry>
+
+    <ontolex:LexicalEntry rdf:about="#defendant_en">
+        <ontolex:lexicalForm>
+            <ontolex:Form rdf:about="#form_defendant_en">
+                <ontolex:writtenRep xml:lang="en">defendant</ontolex:writtenRep>
+            </ontolex:Form>
+        </ontolex:lexicalForm>
+        <ontolex:evokes>
+            <ontolex:LexicalConcept rdf:about="#lexical_concept_defendant_en">
+                <ontolex:isEvokedBy rdf:resource="#defendant_en"/>
+                <skos:definition xml:lang="en">Litigant who has lawsuit initiated against by other, can be any gender or citizenship status, receives a punishment if convicted.</skos:definition>
+            </ontolex:LexicalConcept>
+        </ontolex:evokes>
+        <ontolex:denotes rdf:resource="#Legal_Participants_is_able_to_win_or_lose_legal_suit_has_lawsuit_initiated_against_by_other_can_be_any_gender_or_citizenship_status_receives_a_punishment_if_convicted"/>
+    </ontolex:LexicalEntry>
+
+    <ontolex:LexicalEntry rdf:about="#witness_en">
+        <ontolex:lexicalForm>
+            <ontolex:Form rdf:about="#form_witness_en">
+                <ontolex:writtenRep xml:lang="en">witness</ontolex:writtenRep>
+            </ontolex:Form>
+        </ontolex:lexicalForm>
+        <ontolex:evokes>
+            <ontolex:LexicalConcept rdf:about="#lexical_concept_witness_en">
+                <ontolex:isEvokedBy rdf:resource="#witness_en"/>
+                <skos:definition xml:lang="en">Legal participant who participates in suit but is not directly affected by outcome, gives testimony in court through witness depositions to support litigant, must be an adult male citizen or metic, can be prosecuted for dishonesty.</skos:definition>
+            </ontolex:LexicalConcept>
+        </ontolex:evokes>
+        <ontolex:denotes rdf:resource="#Legal_Participants_participates_in_suit_but_is_not_directly_affected_by_outcome_gives_testimony_in_court_through_witness_depositions_to_support_litigant_must_be_an_adult_male_citizen_or_metic_can_be_prosecuted_for_dishonesty"/>
+    </ontolex:LexicalEntry>
+
+    <ontolex:LexicalEntry rdf:about="#legal_participant_en">
+        <ontolex:lexicalForm>
+            <ontolex:Form rdf:about="#form_legal_participant_en">
+                <ontolex:writtenRep xml:lang="en">legal participant</ontolex:writtenRep>
+            </ontolex:Form>
+        </ontolex:lexicalForm>
+        <ontolex:evokes>
+            <ontolex:LexicalConcept rdf:about="#lexical_concept_legal_participant_en">
+                <ontolex:isEvokedBy rdf:resource="#legal_participant_en"/>
+                <skos:definition xml:lang="en">.</skos:definition>
+            </ontolex:LexicalConcept>
+        </ontolex:evokes>
+        <ontolex:denotes rdf:resource="#Legal_Participants"/>
+    </ontolex:LexicalEntry>
+
+    <ontolex:LexicalEntry rdf:about="#litigant_en">
+        <ontolex:lexicalForm>
+            <ontolex:Form rdf:about="#form_litigant_en">
+                <ontolex:writtenRep xml:lang="en">litigant</ontolex:writtenRep>
+            </ontolex:Form>
+        </ontolex:lexicalForm>
+        <ontolex:evokes>
+            <ontolex:LexicalConcept rdf:about="#lexical_concept_litigant_en">
+                <ontolex:isEvokedBy rdf:resource="#litigant_en"/>
+                <skos:definition xml:lang="en">Legal participant who is able to win or lose legal suit.</skos:definition>
+            </ontolex:LexicalConcept>
+        </ontolex:evokes>
+        <ontolex:denotes rdf:resource="#Legal_Participants_is_able_to_win_or_lose_legal_suit"/>
+    </ontolex:LexicalEntry>
+
+    <ontolex:LexicalEntry rdf:about="#plaintiff_en">
+        <ontolex:lexicalForm>
+            <ontolex:Form rdf:about="#form_plaintiff_en">
+                <ontolex:writtenRep xml:lang="en">plaintiff</ontolex:writtenRep>
+            </ontolex:Form>
+        </ontolex:lexicalForm>
+        <ontolex:evokes>
+            <ontolex:LexicalConcept rdf:about="#lexical_concept_plaintiff_en">
+                <ontolex:isEvokedBy rdf:resource="#plaintiff_en"/>
+                <skos:definition xml:lang="en">Litigant who initiates lawsuit against another, must be an adult male citizen or metic, receives a monetary penalty if prosecution fails.</skos:definition>
+            </ontolex:LexicalConcept>
+        </ontolex:evokes>
+        <ontolex:denotes rdf:resource="#Legal_Participants_is_able_to_win_or_lose_legal_suit_initiates_lawsuit_against_another_must_be_an_adult_male_citizen_or_metic_receives_a_monetary_penalty_if_prosecution_fails"/>
+    </ontolex:LexicalEntry>
+
+    <ontolex:LexicalEntry rdf:about="#advocate_en">
+        <ontolex:lexicalForm>
+            <ontolex:Form rdf:about="#form_advocate_en">
+                <ontolex:writtenRep xml:lang="en">advocate</ontolex:writtenRep>
+            </ontolex:Form>
+        </ontolex:lexicalForm>
+        <ontolex:evokes>
+            <ontolex:LexicalConcept rdf:about="#lexical_concept_advocate_en">
+                <ontolex:isEvokedBy rdf:resource="#advocate_en"/>
+                <skos:definition xml:lang="en">Legal participant who participates in suit but is not directly affected by outcome, delivers supporting speeches for litigant, must be an adult male citizen.</skos:definition>
+            </ontolex:LexicalConcept>
+        </ontolex:evokes>
+        <ontolex:denotes rdf:resource="#Legal_Participants_participates_in_suit_but_is_not_directly_affected_by_outcome_delivers_supporting_speeches_for_litigant_must_be_an_adult_male_citizen"/>
+    </ontolex:LexicalEntry>
+
+    <ontolex:LexicalEntry rdf:about="#prosecutor_en">
+        <ontolex:lexicalForm>
+            <ontolex:Form rdf:about="#form_prosecutor_en">
+                <ontolex:writtenRep xml:lang="en">prosecutor</ontolex:writtenRep>
+            </ontolex:Form>
+        </ontolex:lexicalForm>
+        <ontolex:evokes>
+            <ontolex:LexicalConcept rdf:about="#lexical_concept_prosecutor_en">
+                <ontolex:isEvokedBy rdf:resource="#prosecutor_en"/>
+                <skos:definition xml:lang="en">Litigant who initiates lawsuit against another, must be an adult male citizen or metic, receives a monetary penalty if prosecution fails.</skos:definition>
+            </ontolex:LexicalConcept>
+        </ontolex:evokes>
+        <ontolex:denotes rdf:resource="#Legal_Participants_is_able_to_win_or_lose_legal_suit_initiates_lawsuit_against_another_must_be_an_adult_male_citizen_or_metic_receives_a_monetary_penalty_if_prosecution_fails"/>
+    </ontolex:LexicalEntry>
+
+    <ontolex:LexicalEntry rdf:about="#κλητήρ_grc">
+        <ontolex:lexicalForm>
+            <ontolex:Form rdf:about="#form_κλητήρ_grc">
+                <ontolex:writtenRep xml:lang="grc">κλητήρ</ontolex:writtenRep>
+            </ontolex:Form>
+        </ontolex:lexicalForm>
+        <ontolex:evokes>
+            <ontolex:LexicalConcept rdf:about="#lexical_concept_κλητήρ_grc">
+                <ontolex:isEvokedBy rdf:resource="#κλητήρ_grc"/>
+                <skos:definition xml:lang="grc">Legal participant who participates in suit but is not directly affected by outcome, witnesses the plaintiff summoning the defendant, must be an adult male citizen, can be prosecuted for dishonesty.</skos:definition>
+            </ontolex:LexicalConcept>
+        </ontolex:evokes>
+        <ontolex:denotes rdf:resource="#Legal_Participants_participates_in_suit_but_is_not_directly_affected_by_outcome_witnesses_the_plaintiff_summoning_the_defendant_must_be_an_adult_male_citizen_can_be_prosecuted_for_dishonesty"/>
+    </ontolex:LexicalEntry>
+
+    <ontolex:LexicalEntry rdf:about="#legal_participant_grc">
+        <ontolex:lexicalForm>
+            <ontolex:Form rdf:about="#form_legal_participant_grc">
+                <ontolex:writtenRep xml:lang="grc">legal participant</ontolex:writtenRep>
+            </ontolex:Form>
+        </ontolex:lexicalForm>
+        <ontolex:evokes>
+            <ontolex:LexicalConcept rdf:about="#lexical_concept_legal_participant_grc">
+                <ontolex:isEvokedBy rdf:resource="#legal_participant_grc"/>
+                <skos:definition xml:lang="grc">.</skos:definition>
+            </ontolex:LexicalConcept>
+        </ontolex:evokes>
+        <ontolex:denotes rdf:resource="#Legal_Participants"/>
+    </ontolex:LexicalEntry>
+
+    <ontolex:LexicalEntry rdf:about="#ἀμφισβητῶν_grc">
+        <ontolex:lexicalForm>
+            <ontolex:Form rdf:about="#form_ἀμφισβητῶν_grc">
+                <ontolex:writtenRep xml:lang="grc">ἀμφισβητῶν</ontolex:writtenRep>
+            </ontolex:Form>
+        </ontolex:lexicalForm>
+        <ontolex:evokes>
+            <ontolex:LexicalConcept rdf:about="#lexical_concept_ἀμφισβητῶν_grc">
+                <ontolex:isEvokedBy rdf:resource="#ἀμφισβητῶν_grc"/>
+                <skos:definition xml:lang="grc">ἀντίδικος who makes a competing claim for an inheritance, must be an adult male citizen, loses deposit if decision is unfavorable.</skos:definition>
+            </ontolex:LexicalConcept>
+        </ontolex:evokes>
+        <ontolex:denotes rdf:resource="#Legal_Participants_is_able_to_win_or_lose_legal_suit_makes_a_competing_claim_for_an_inheritance_must_be_an_adult_male_citizen_loses_deposit_if_decision_is_unfavorable"/>
+    </ontolex:LexicalEntry>
+
+    <ontolex:LexicalEntry rdf:about="#διώκων_grc">
+        <ontolex:lexicalForm>
+            <ontolex:Form rdf:about="#form_διώκων_grc">
+                <ontolex:writtenRep xml:lang="grc">διώκων</ontolex:writtenRep>
+            </ontolex:Form>
+        </ontolex:lexicalForm>
+        <ontolex:evokes>
+            <ontolex:LexicalConcept rdf:about="#lexical_concept_διώκων_grc">
+                <ontolex:isEvokedBy rdf:resource="#διώκων_grc"/>
+                <skos:definition xml:lang="grc">ἀντίδικος who initiates lawsuit against another, must be an adult male citizen or metic, receives a monetary penalty if prosecution fails.</skos:definition>
+            </ontolex:LexicalConcept>
+        </ontolex:evokes>
+        <ontolex:denotes rdf:resource="#Legal_Participants_is_able_to_win_or_lose_legal_suit_initiates_lawsuit_against_another_must_be_an_adult_male_citizen_or_metic_receives_a_monetary_penalty_if_prosecution_fails"/>
+    </ontolex:LexicalEntry>
+
+    <ontolex:LexicalEntry rdf:about="#μάρτυς_grc">
+        <ontolex:lexicalForm>
+            <ontolex:Form rdf:about="#form_μάρτυς_grc">
+                <ontolex:writtenRep xml:lang="grc">μάρτυς</ontolex:writtenRep>
+            </ontolex:Form>
+        </ontolex:lexicalForm>
+        <ontolex:evokes>
+            <ontolex:LexicalConcept rdf:about="#lexical_concept_μάρτυς_grc">
+                <ontolex:isEvokedBy rdf:resource="#μάρτυς_grc"/>
+                <skos:definition xml:lang="grc">Legal participant who participates in suit but is not directly affected by outcome, gives testimony in court through witness depositions to support litigant, must be an adult male citizen or metic, can be prosecuted for dishonesty.</skos:definition>
+            </ontolex:LexicalConcept>
+        </ontolex:evokes>
+        <ontolex:denotes rdf:resource="#Legal_Participants_participates_in_suit_but_is_not_directly_affected_by_outcome_gives_testimony_in_court_through_witness_depositions_to_support_litigant_must_be_an_adult_male_citizen_or_metic_can_be_prosecuted_for_dishonesty"/>
+    </ontolex:LexicalEntry>
+
+    <ontolex:LexicalEntry rdf:about="#ἀντίδικος_grc">
+        <ontolex:lexicalForm>
+            <ontolex:Form rdf:about="#form_ἀντίδικος_grc">
+                <ontolex:writtenRep xml:lang="grc">ἀντίδικος</ontolex:writtenRep>
+            </ontolex:Form>
+        </ontolex:lexicalForm>
+        <ontolex:evokes>
+            <ontolex:LexicalConcept rdf:about="#lexical_concept_ἀντίδικος_grc">
+                <ontolex:isEvokedBy rdf:resource="#ἀντίδικος_grc"/>
+                <skos:definition xml:lang="grc">Legal participant who is able to win or lose legal suit.</skos:definition>
+            </ontolex:LexicalConcept>
+        </ontolex:evokes>
+        <ontolex:denotes rdf:resource="#Legal_Participants_is_able_to_win_or_lose_legal_suit"/>
+    </ontolex:LexicalEntry>
+
+    <ontolex:LexicalEntry rdf:about="#συνήγορος_grc">
+        <ontolex:lexicalForm>
+            <ontolex:Form rdf:about="#form_συνήγορος_grc">
+                <ontolex:writtenRep xml:lang="grc">συνήγορος</ontolex:writtenRep>
+            </ontolex:Form>
+        </ontolex:lexicalForm>
+        <ontolex:evokes>
+            <ontolex:LexicalConcept rdf:about="#lexical_concept_συνήγορος_grc">
+                <ontolex:isEvokedBy rdf:resource="#συνήγορος_grc"/>
+                <skos:definition xml:lang="grc">Legal participant who participates in suit but is not directly affected by outcome, delivers supporting speeches for litigant, must be an adult male citizen.</skos:definition>
+            </ontolex:LexicalConcept>
+        </ontolex:evokes>
+        <ontolex:denotes rdf:resource="#Legal_Participants_participates_in_suit_but_is_not_directly_affected_by_outcome_delivers_supporting_speeches_for_litigant_must_be_an_adult_male_citizen"/>
+    </ontolex:LexicalEntry>
+
+    <ontolex:LexicalEntry rdf:about="#φεύγων_grc">
+        <ontolex:lexicalForm>
+            <ontolex:Form rdf:about="#form_φεύγων_grc">
+                <ontolex:writtenRep xml:lang="grc">φεύγων</ontolex:writtenRep>
+            </ontolex:Form>
+        </ontolex:lexicalForm>
+        <ontolex:evokes>
+            <ontolex:LexicalConcept rdf:about="#lexical_concept_φεύγων_grc">
+                <ontolex:isEvokedBy rdf:resource="#φεύγων_grc"/>
+                <skos:definition xml:lang="grc">ἀντίδικος who has lawsuit initiated against by other, can be any gender or citizenship status, receives a punishment if convicted.</skos:definition>
+            </ontolex:LexicalConcept>
+        </ontolex:evokes>
+        <ontolex:denotes rdf:resource="#Legal_Participants_is_able_to_win_or_lose_legal_suit_has_lawsuit_initiated_against_by_other_can_be_any_gender_or_citizenship_status_receives_a_punishment_if_convicted"/>
+    </ontolex:LexicalEntry>
+
+
+<!-- *********************************************** -->
+<!-- ONTOTERMINOLOGY VOCABULARY (OTV) -->
+<!-- http://ontoterminology.com/ -->
+<!-- *********************************************** -->
+
+<!-- ***********************************************
+                     OTV CLASSES
+     *********************************************** -->
+
+<!-- Conceptual dimension -->
+
+<!-- CTT concepts are represented as OWL classes
+     and as instances of the OTVConcept  class -->
+
+<owl:Class rdf:about="http://www.ontologia.fr/OTB/otv#OTVCore">
+        <rdfs:label>OTVCore</rdfs:label>      
+        <rdfs:comment>The Generic Concept of OTV Concepts</rdfs:comment>
+        <rdfs:isDefinedBy>http://www.ontologia.fr/OTB/otv.rdf</rdfs:isDefinedBy>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.ontologia.fr/OTB/otv#Concept">
+        <rdfs:label>Concept</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ontologia.fr/OTB/otv#OTVCore"/>     
+        <rdfs:comment>The class of OTV Concept</rdfs:comment>
+        <rdfs:comment>Les concepts sont des instances de la classe Concept</rdfs:comment>
+        <rdfs:isDefinedBy>http://www.ontologia.fr/OTB/otv.rdf</rdfs:isDefinedBy>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#AxisOfAnalysis"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Difference"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Relation"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Attribute"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Object"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Term"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#ProperName"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.ontologia.fr/OTB/otv#AxisOfAnalysis">
+        <rdfs:label>AxisOfAnalysis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ontologia.fr/OTB/otv#OTVCore"/>     
+        <rdfs:comment>The class of OTV AxesOfAnalysis</rdfs:comment>
+        <rdfs:comment>Les axes d analyse sont des instances de la classe AxesOfAnalysis</rdfs:comment>
+        <rdfs:isDefinedBy>http://www.ontologia.fr/OTB/otv.rdf</rdfs:isDefinedBy>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Concept"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Difference"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Relation"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Attribute"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Object"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Term"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#ProperName"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.ontologia.fr/OTB/otv#Difference">
+        <rdfs:label>Difference</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ontologia.fr/OTB/otv#OTVCore"/>    
+        <rdfs:comment>The class of OTV Differences</rdfs:comment>
+       <rdfs:comment>Les différence sont des instances de la classe Difference</rdfs:comment>
+        <rdfs:isDefinedBy>http://www.ontologia.fr/OTB/otv.rdf</rdfs:isDefinedBy>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#AxisOfAnalysis"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Concept"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Relation"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Attribute"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Object"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Term"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#ProperName"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.ontologia.fr/OTB/otv#Relation">
+        <rdfs:label>Relation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ontologia.fr/OTB/otv#OTVCore"/>    
+        <rdfs:comment>The class of OTV Relations</rdfs:comment>
+        <rdfs:isDefinedBy>http://www.ontologia.fr/OTB/otv.rdf</rdfs:isDefinedBy>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#AxisOfAnalysis"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Difference"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Concept"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Attribute"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Object"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Term"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#ProperName"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.ontologia.fr/OTB/otv#Attribute">
+        <rdfs:label>Attribute</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ontologia.fr/OTB/otv#OTVCore"/>    
+        <rdfs:comment>The class of OTV Attributes</rdfs:comment>
+        <rdfs:isDefinedBy>http://www.ontologia.fr/OTB/otv.rdf</rdfs:isDefinedBy>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#AxisOfAnalysis"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Difference"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Relation"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Concept"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Object"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Term"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#ProperName"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.ontologia.fr/OTB/otv#Object">
+        <rdfs:label>Object</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ontologia.fr/OTB/otv#OTVCore"/>
+        <rdfs:comment>The class of OTV Objects</rdfs:comment>
+        <rdfs:isDefinedBy>http://www.ontologia.fr/OTB/otv.rdf</rdfs:isDefinedBy>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#AxisOfAnalysis"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Difference"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Relation"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Attribute"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Concept"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Term"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#ProperName"/>
+</owl:Class>
+
+<!-- Linguistic dimension -->
+
+<owl:Class rdf:about="http://www.ontologia.fr/OTB/otv#Term">
+ 	      <rdfs:label>Term</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ontologia.fr/OTB/otv#OTVCore"/>
+        <rdfs:comment>The class of OTV Terms</rdfs:comment>
+        <rdfs:isDefinedBy>http://www.ontologia.fr/OTB/otv.rdf</rdfs:isDefinedBy>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#AxisOfAnalysis"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Difference"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Relation"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Attribute"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Object"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Concept"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#ProperName"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.ontologia.fr/OTB/otv#ProperName">
+        <rdfs:label>ProperName</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ontologia.fr/OTB/otv#OTVCore"/>
+        <rdfs:comment>The class of OTV ProperName</rdfs:comment>
+        <rdfs:isDefinedBy>http://www.ontologia.fr/OTB/otv.rdf</rdfs:isDefinedBy>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#AxisOfAnalysis"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Difference"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Relation"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Attribute"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Object"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Term"/>
+        <owl:disjointWith rdf:resource="http://www.ontologia.fr/OTB/otv#Concept"/>
+</owl:Class>
+
+<!-- ***********************************************
+                     OTV OBJECT PROPERTIES
+     *********************************************** -->
+
+<!-- Conceptual dimension -->
+
+<owl:ObjectProperty rdf:about="http://www.ontologia.fr/OTB/otv#isA">
+    <rdfs:label>isA</rdfs:label> 
+    <rdfs:comment>Generic relationship between 2 concepts</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.ontologia.fr/OTB/otv#Concept"/>
+    <rdfs:range rdf:resource="http://www.ontologia.fr/OTB/otv#Concept"/>
+    <rdfs:isDefinedBy>http://www.ontologia.fr/OTB/otv.rdf</rdfs:isDefinedBy>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.ontologia.fr/OTB/otv#ownDifference">
+  <rdfs:label>ownDifference</rdfs:label>
+  <rdfs:comment>Link a concept to one of its specific differences</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.ontologia.fr/OTB/otv#Concept"/>
+    <rdfs:range rdf:resource="http://www.ontologia.fr/OTB/otv#Difference"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.ontologia.fr/OTB/otv#inheritedDifference">
+  <rdfs:label>inheritedDifference</rdfs:label>
+  <rdfs:comment>Link a concept to one of its inherited differences</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.ontologia.fr/OTB/otv#Concept"/>
+    <rdfs:range rdf:resource="http://www.ontologia.fr/OTB/otv#Difference"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.ontologia.fr/OTB/otv#difference">
+  <rdfs:label>difference</rdfs:label>
+  <rdfs:comment>Link a concept to one of its differences either inherited or specific</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.ontologia.fr/OTB/otv#Concept"/>
+    <rdfs:range rdf:resource="http://www.ontologia.fr/OTB/otv#Difference"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.ontologia.fr/OTB/otv#belongsToAxis">
+  <rdfs:label>belongsToAxis</rdfs:label>
+  <rdfs:comment>Indicate the axis of analysis to which the difference belongs</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.ontologia.fr/OTB/otv#Difference"/>
+    <rdfs:range rdf:resource="http://www.ontologia.fr/OTB/otv#AxisOfAnalysis"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.ontologia.fr/OTB/otv#containsDifference">
+  <rdfs:label>containsDifference</rdfs:label>
+  <rdfs:comment>Indicate the differences which belongs to the axis of analysis</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.ontologia.fr/OTB/otv#AxisOfAnalysis"/>
+    <rdfs:range rdf:resource="http://www.ontologia.fr/OTB/otv#Difference"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.ontologia.fr/OTB/otv#attribute">
+  <rdfs:label>attribute</rdfs:label>
+  <rdfs:comment>Link a concept to one of its attributes either inherited or specific</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.ontologia.fr/OTB/otv#Concept"/>
+    <rdfs:range rdf:resource="http://www.ontologia.fr/OTB/otv#Attribute"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.ontologia.fr/OTB/otv#instanceOf">
+    <rdfs:label>instanceOf</rdfs:label> 
+    <rdfs:comment>instance relationship</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.ontologia.fr/OTB/otv#Object"/>
+    <rdfs:range rdf:resource="http://www.ontologia.fr/OTB/otv#Concept"/>
+  <rdfs:isDefinedBy>http://www.ontologia.fr/OTB/otv.rdf</rdfs:isDefinedBy>
+</owl:ObjectProperty>
+
+<!-- Relations between the 2 dimensions -->
+
+<owl:ObjectProperty rdf:about="http://www.ontologia.fr/OTB/otv#denotedByTerm">
+    <rdfs:label>denotedByTerm</rdfs:label> 
+    <rdfs:comment>Link a concept to a term which denotes it</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.ontologia.fr/OTB/otv#Concept"/>
+    <rdfs:range rdf:resource="http://www.ontologia.fr/OTB/otv#Term"/>
+  <rdfs:isDefinedBy>http://www.ontologia.fr/OTB/otv.rdf</rdfs:isDefinedBy>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.ontologia.fr/OTB/otv#denotedConcept">
+    <rdfs:label>denotedConcept</rdfs:label> 
+    <rdfs:comment>Property whose value is the OTV concept denoted by the term: &apos;a term is a verbal designation of a concept&apos; (ISO 1087)</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.ontologia.fr/OTB/otv#Term"/>
+    <rdfs:range rdf:resource="http://www.ontologia.fr/OTB/otv#Concept"/>
+    <rdfs:isDefinedBy>http://www.ontologia.fr/OTB/otv.rdf</rdfs:isDefinedBy>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.ontologia.fr/OTB/otv#denotedByProperName">
+    <rdfs:label>denotedByProperName</rdfs:label>
+    <rdfs:comment>The denotedByPrperName property links an individual (object) to a proper name which denotes it</rdfs:comment>
+ 	<rdfs:domain rdf:resource="http://www.ontologia.fr/OTB/otv#Object"/>
+ 	<rdfs:range rdf:resource="http://www.ontologia.fr/OTB/otv#ProperName"/>
+    <rdfs:isDefinedBy>http://www.ontologia.fr/OTB/otv.rdf</rdfs:isDefinedBy>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.ontologia.fr/OTB/otv#denotedObject">
+   	<rdfs:label>denotedObject</rdfs:label>
+    <rdfs:comment>Property whose value is the OTV object denoted by the proper name</rdfs:comment>
+ 	<rdfs:domain rdf:resource="http://www.ontologia.fr/OTB/otv#ProperName"/>
+ 	<rdfs:range rdf:resource="http://www.ontologia.fr/OTB/otv#Object"/>
+    <rdfs:isDefinedBy>http://www.ontologia.fr/OTB/otv.rdf</rdfs:isDefinedBy>
+</owl:ObjectProperty>
+
+
+<!-- ***********************************************
+                      OTV ANNOTATION PROPERTIES
+       *********************************************** -->
+
+<owl:AnnotationProperty rdf:about="http://www.ontologia.fr/OTB/otv#conceptName">
+    <rdfs:label>conceptName</rdfs:label> 
+    <rdfs:comment>Name of the concept</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.ontologia.fr/OTB/otv#Concept"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:isDefinedBy>http://www.ontologia.fr/OTB/otv.rdf</rdfs:isDefinedBy>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.ontologia.fr/OTB/otv#termName">
+    <rdfs:label>termName</rdfs:label> <!-- équivalent à rdfs:label -->
+    <rdfs:comment>String representing the term</rdfs:comment>
+ 	  <rdfs:domain rdf:resource="http://www.ontologia.fr/OTB/otv#Term"/>
+ 	  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+   	<rdfs:isDefinedBy>http://www.ontologia.fr/OTB/otv.rdf</rdfs:isDefinedBy>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.ontologia.fr/OTB/otv#properName">
+ 	  <rdfs:label>properName</rdfs:label>
+    <rdfs:comment>String representing the proper name</rdfs:comment>
+ 	  <rdfs:domain rdf:resource="http://www.ontologia.fr/OTB/otv#ProperName"/>
+ 	  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+   	<rdfs:isDefinedBy>http://www.ontologia.fr/OTB/otv.rdf</rdfs:isDefinedBy>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.ontologia.fr/OTB/otv#language">
+ 	  <rdfs:label>language</rdfs:label>
+    <rdfs:comment>Property that denotes the language of the term</rdfs:comment>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.ontologia.fr/OTB/otv#Term"/>
+          <rdf:Description rdf:about="http://www.ontologia.fr/OTB/otv#ProperName"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+ 	  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+   	<rdfs:isDefinedBy>http://www.ontologia.fr/OTB/otv.rdf</rdfs:isDefinedBy>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.ontologia.fr/OTB/otv#termStatus">
+	 <rdfs:label>termStatus</rdfs:label>
+    <rdfs:comment>Property that indicates the status of the term</rdfs:comment>
+ 	  <rdfs:domain rdf:resource="http://www.ontologia.fr/OTB/otv#Term"/>
+ 	  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+   	<rdfs:isDefinedBy>http://www.ontologia.fr/OTB/otv.rdf</rdfs:isDefinedBy>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.ontologia.fr/OTB/otv#termDefinition">
+   <rdfs:label>termDefinition</rdfs:label>
+    <rdfs:comment>Defintion of the term in natural language</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.ontologia.fr/OTB/otv#Term"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:isDefinedBy>http://www.ontologia.fr/OTB/otv.rdf</rdfs:isDefinedBy>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.ontologia.fr/OTB/otv#context">
+   <rdfs:label>context</rdfs:label>
+    <rdfs:comment>Context associated to the term</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.ontologia.fr/OTB/otv#Term"/>
+    <rdfs:isDefinedBy>http://www.ontologia.fr/OTB/otv.rdf</rdfs:isDefinedBy>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.ontologia.fr/OTB/otv#note">
+   <rdfs:label>note</rdfs:label>
+    <rdfs:comment>Note associated to the term</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.ontologia.fr/OTB/otv#Term"/>
+    <rdfs:isDefinedBy>http://www.ontologia.fr/OTB/otv.rdf</rdfs:isDefinedBy>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.ontologia.fr/OTB/otv#partOfSpeech">
+   <rdfs:label>partOfSpeech</rdfs:label>
+    <rdfs:comment>Part of Speech of the term</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.ontologia.fr/OTB/otv#Term"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:isDefinedBy>http://www.ontologia.fr/OTB/otv.rdf</rdfs:isDefinedBy>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.ontologia.fr/OTB/otv#gender">
+   <rdfs:label>gender</rdfs:label>
+    <rdfs:comment>Gender of the term</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.ontologia.fr/OTB/otv#Term"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:isDefinedBy>http://www.ontologia.fr/OTB/otv.rdf</rdfs:isDefinedBy>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.ontologia.fr/OTB/otv#beginDate">
+    <rdfs:label>beginDate</rdfs:label>
+   	<rdfs:comment>Property that indicates the begin date of of an axis of analysis, concept, term, object</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.ontologia.fr/OTB/otv#OTVCore"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+   	<rdfs:isDefinedBy>http://www.ontologia.fr/OTB/otv.rdf</rdfs:isDefinedBy>
+</owl:AnnotationProperty>
+
+<owl:AnnotationProperty rdf:about="http://www.ontologia.fr/OTB/otv#endDate">
+	 <rdfs:label>endDate</rdfs:label>
+ 	  <rdfs:comment>Property that indicates the end date of of an axis of analysis, concept, term, object</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.ontologia.fr/OTB/otv#OTVCore"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+   	<rdfs:isDefinedBy>http://www.ontologia.fr/OTB/otv.rdf</rdfs:isDefinedBy>
+</owl:AnnotationProperty>
+
+
+	<!-- 
+	//////////////////////////////////////////////////////////
+	//
+	// OTV
+	//
+	//////////////////////////////////////////////////////////
+	-->
+
+<!-- ONTOTERMINOLOGY
+
+	Ontoterminology: Athenian-Legal-Participants
+	Author: Rachel Milio
+	Creation date: April 2, 2025
+	Export date: October 10, 2025 time: 10:09:46 AM
+	Generated by Tedi version: 4.1
+	http://ontoterminology.com/tedi -->
+
+	<!--  OTV Axes of Analysis and Differences -->
+
+    <!-- Axis of Analysis: 2 role in proceeding -->
+
+    <otv:AxisOfAnalysis rdf:about="#2_role_in_proceeding">
+        <rdfs:label>2 role in proceeding</rdfs:label>
+        <otv:containsDifference rdf:resource="#delivers_supporting_speeches_for_litigant"/>
+        <otv:containsDifference rdf:resource="#gives_testimony_in_court_through_witness_depositions_to_support_litigant"/>
+        <otv:containsDifference rdf:resource="#who_has_lawsuit_initiated_against_by_other"/>
+        <otv:containsDifference rdf:resource="#who_initiates_lawsuit_against_another"/>
+        <otv:containsDifference rdf:resource="#who_makes_a_competing_claim_for_an_inheritance"/>
+        <otv:containsDifference rdf:resource="#witnesses_the_plaintiff_summoning_the_defendant"/>
+    </otv:AxisOfAnalysis>
+
+    <otv:Difference rdf:about="#delivers_supporting_speeches_for_litigant">
+        <rdf:type rdf:resource="http://www.ontologia.fr/OTB/otv#Difference"/>
+        <rdfs:label>delivers supporting speeches for litigant</rdfs:label>
+        <otv:belongsToAxis rdf:resource="#2_role_in_proceeding"/>
+    </otv:Difference>
+
+    <otv:Difference rdf:about="#gives_testimony_in_court_through_witness_depositions_to_support_litigant">
+        <rdf:type rdf:resource="http://www.ontologia.fr/OTB/otv#Difference"/>
+        <rdfs:label>gives testimony in court through witness depositions to support litigant</rdfs:label>
+        <otv:belongsToAxis rdf:resource="#2_role_in_proceeding"/>
+    </otv:Difference>
+
+    <otv:Difference rdf:about="#who_has_lawsuit_initiated_against_by_other">
+        <rdf:type rdf:resource="http://www.ontologia.fr/OTB/otv#Difference"/>
+        <rdfs:label>who has lawsuit initiated against by other</rdfs:label>
+        <otv:belongsToAxis rdf:resource="#2_role_in_proceeding"/>
+    </otv:Difference>
+
+    <otv:Difference rdf:about="#who_initiates_lawsuit_against_another">
+        <rdf:type rdf:resource="http://www.ontologia.fr/OTB/otv#Difference"/>
+        <rdfs:label>who initiates lawsuit against another</rdfs:label>
+        <otv:belongsToAxis rdf:resource="#2_role_in_proceeding"/>
+    </otv:Difference>
+
+    <otv:Difference rdf:about="#who_makes_a_competing_claim_for_an_inheritance">
+        <rdf:type rdf:resource="http://www.ontologia.fr/OTB/otv#Difference"/>
+        <rdfs:label>who makes a competing claim for an inheritance</rdfs:label>
+        <otv:belongsToAxis rdf:resource="#2_role_in_proceeding"/>
+    </otv:Difference>
+
+    <otv:Difference rdf:about="#witnesses_the_plaintiff_summoning_the_defendant">
+        <rdf:type rdf:resource="http://www.ontologia.fr/OTB/otv#Difference"/>
+        <rdfs:label>witnesses the plaintiff summoning the defendant</rdfs:label>
+        <otv:belongsToAxis rdf:resource="#2_role_in_proceeding"/>
+    </otv:Difference>
+
+    <!-- Axis of Analysis: 1 level of interest -->
+
+    <otv:AxisOfAnalysis rdf:about="#1_level_of_interest">
+        <rdfs:label>1 level of interest</rdfs:label>
+        <otv:containsDifference rdf:resource="#who_is_able_to_win_or_lose_legal_suit"/>
+        <otv:containsDifference rdf:resource="#who_participates_in_suit_but_is_not_directly_affected_by_outcome"/>
+    </otv:AxisOfAnalysis>
+
+    <otv:Difference rdf:about="#who_is_able_to_win_or_lose_legal_suit">
+        <rdf:type rdf:resource="http://www.ontologia.fr/OTB/otv#Difference"/>
+        <rdfs:label>who is able to win or lose legal suit</rdfs:label>
+        <otv:belongsToAxis rdf:resource="#1_level_of_interest"/>
+    </otv:Difference>
+
+    <otv:Difference rdf:about="#who_participates_in_suit_but_is_not_directly_affected_by_outcome">
+        <rdf:type rdf:resource="http://www.ontologia.fr/OTB/otv#Difference"/>
+        <rdfs:label>who participates in suit but is not directly affected by outcome</rdfs:label>
+        <otv:belongsToAxis rdf:resource="#1_level_of_interest"/>
+    </otv:Difference>
+
+    <!-- Axis of Analysis: 3 status -->
+
+    <otv:AxisOfAnalysis rdf:about="#3_status">
+        <rdfs:label>3 status</rdfs:label>
+        <otv:containsDifference rdf:resource="#can_be_any_gender_or_citizenship_status"/>
+        <otv:containsDifference rdf:resource="#must_be_an_adult_male_citizen_or_metic"/>
+        <otv:containsDifference rdf:resource="#must_be_an_adult_male_citizen"/>
+    </otv:AxisOfAnalysis>
+
+    <otv:Difference rdf:about="#can_be_any_gender_or_citizenship_status">
+        <rdf:type rdf:resource="http://www.ontologia.fr/OTB/otv#Difference"/>
+        <rdfs:label>can be any gender or citizenship status</rdfs:label>
+        <otv:belongsToAxis rdf:resource="#3_status"/>
+    </otv:Difference>
+
+    <otv:Difference rdf:about="#must_be_an_adult_male_citizen_or_metic">
+        <rdf:type rdf:resource="http://www.ontologia.fr/OTB/otv#Difference"/>
+        <rdfs:label>must be an adult male citizen or metic</rdfs:label>
+        <otv:belongsToAxis rdf:resource="#3_status"/>
+    </otv:Difference>
+
+    <otv:Difference rdf:about="#must_be_an_adult_male_citizen">
+        <rdf:type rdf:resource="http://www.ontologia.fr/OTB/otv#Difference"/>
+        <rdfs:label>must be an adult male citizen</rdfs:label>
+        <otv:belongsToAxis rdf:resource="#3_status"/>
+    </otv:Difference>
+
+    <!-- Axis of Analysis: 4 stakes -->
+
+    <otv:AxisOfAnalysis rdf:about="#4_stakes">
+        <rdfs:label>4 stakes</rdfs:label>
+        <otv:containsDifference rdf:resource="#can_be_prosecuted_for_dishonesty"/>
+        <otv:containsDifference rdf:resource="#loses_deposit_if_decision_is_unfavorable"/>
+        <otv:containsDifference rdf:resource="#receives_a_monetary_penalty_if_prosecution_fails"/>
+        <otv:containsDifference rdf:resource="#receives_a_punishment_if_convicted"/>
+    </otv:AxisOfAnalysis>
+
+    <otv:Difference rdf:about="#can_be_prosecuted_for_dishonesty">
+        <rdf:type rdf:resource="http://www.ontologia.fr/OTB/otv#Difference"/>
+        <rdfs:label>can be prosecuted for dishonesty</rdfs:label>
+        <otv:belongsToAxis rdf:resource="#4_stakes"/>
+    </otv:Difference>
+
+    <otv:Difference rdf:about="#loses_deposit_if_decision_is_unfavorable">
+        <rdf:type rdf:resource="http://www.ontologia.fr/OTB/otv#Difference"/>
+        <rdfs:label>loses deposit if decision is unfavorable</rdfs:label>
+        <otv:belongsToAxis rdf:resource="#4_stakes"/>
+    </otv:Difference>
+
+    <otv:Difference rdf:about="#receives_a_monetary_penalty_if_prosecution_fails">
+        <rdf:type rdf:resource="http://www.ontologia.fr/OTB/otv#Difference"/>
+        <rdfs:label>receives a monetary penalty if prosecution fails</rdfs:label>
+        <otv:belongsToAxis rdf:resource="#4_stakes"/>
+    </otv:Difference>
+
+    <otv:Difference rdf:about="#receives_a_punishment_if_convicted">
+        <rdf:type rdf:resource="http://www.ontologia.fr/OTB/otv#Difference"/>
+        <rdfs:label>receives a punishment if convicted</rdfs:label>
+        <otv:belongsToAxis rdf:resource="#4_stakes"/>
+    </otv:Difference>
+
+	<!--  OTV Relations -->
+
+    <otv:Relation rdf:about="#hasFunction"/>
+    <otv:Relation rdf:about="#hasPart"/>
+    <otv:Relation rdf:about="#isRelatedTo"/>
+	<!--  OTV Attributes -->
+
+	<!--  OTV Concepts -->
+
+    <otv:Concept rdf:about="#Legal_Participants_participates_in_suit_but_is_not_directly_affected_by_outcome_witnesses_the_plaintiff_summoning_the_defendant_must_be_an_adult_male_citizen_can_be_prosecuted_for_dishonesty">
+        <otv:conceptName>&lt;Legal_Participants participates in suit but is not directly affected by outcome witnesses the plaintiff summoning the defendant must be an adult male citizen can be prosecuted for dishonesty&gt;</otv:conceptName>
+        <otv:isA rdf:resource="#Legal_Participants"/>
+        <otv:ownDifference rdf:resource="#who_participates_in_suit_but_is_not_directly_affected_by_outcome"/>
+        <otv:ownDifference rdf:resource="#witnesses_the_plaintiff_summoning_the_defendant"/>
+        <otv:ownDifference rdf:resource="#must_be_an_adult_male_citizen"/>
+        <otv:ownDifference rdf:resource="#can_be_prosecuted_for_dishonesty"/>
+        <otv:difference rdf:resource="#can_be_prosecuted_for_dishonesty"/>
+        <otv:difference rdf:resource="#must_be_an_adult_male_citizen"/>
+        <otv:difference rdf:resource="#witnesses_the_plaintiff_summoning_the_defendant"/>
+        <otv:difference rdf:resource="#who_participates_in_suit_but_is_not_directly_affected_by_outcome"/>
+        <otv:denotedByTerm rdf:resource="#summons-witness_en"/>
+        <otv:denotedByTerm rdf:resource="#κλητήρ_grc"/>
+    </otv:Concept>
+
+    <otv:Concept rdf:about="#Legal_Participants_is_able_to_win_or_lose_legal_suit_initiates_lawsuit_against_another_must_be_an_adult_male_citizen_or_metic_receives_a_monetary_penalty_if_prosecution_fails">
+        <otv:conceptName>&lt;Legal_Participants is able to win or lose legal suit initiates lawsuit against another must be an adult male citizen or metic receives a monetary penalty if prosecution fails&gt;</otv:conceptName>
+        <otv:isA rdf:resource="#Legal_Participants_is_able_to_win_or_lose_legal_suit"/>
+        <otv:ownDifference rdf:resource="#who_initiates_lawsuit_against_another"/>
+        <otv:ownDifference rdf:resource="#must_be_an_adult_male_citizen_or_metic"/>
+        <otv:ownDifference rdf:resource="#receives_a_monetary_penalty_if_prosecution_fails"/>
+        <otv:inheritedDifference rdf:resource="#who_is_able_to_win_or_lose_legal_suit"/>
+        <otv:difference rdf:resource="#receives_a_monetary_penalty_if_prosecution_fails"/>
+        <otv:difference rdf:resource="#must_be_an_adult_male_citizen_or_metic"/>
+        <otv:difference rdf:resource="#who_initiates_lawsuit_against_another"/>
+        <otv:difference rdf:resource="#who_is_able_to_win_or_lose_legal_suit"/>
+        <otv:denotedByTerm rdf:resource="#prosecutor_en"/>
+        <otv:denotedByTerm rdf:resource="#plaintiff_en"/>
+        <otv:denotedByTerm rdf:resource="#διώκων_grc"/>
+    </otv:Concept>
+
+    <otv:Concept rdf:about="#Legal_Participants_is_able_to_win_or_lose_legal_suit">
+        <otv:conceptName>&lt;Legal_Participants is able to win or lose legal suit&gt;</otv:conceptName>
+        <otv:isA rdf:resource="#Legal_Participants"/>
+        <otv:ownDifference rdf:resource="#who_is_able_to_win_or_lose_legal_suit"/>
+        <otv:difference rdf:resource="#who_is_able_to_win_or_lose_legal_suit"/>
+        <otv:denotedByTerm rdf:resource="#litigant_en"/>
+        <otv:denotedByTerm rdf:resource="#ἀντίδικος_grc"/>
+    </otv:Concept>
+
+    <otv:Concept rdf:about="#Legal_Participants_participates_in_suit_but_is_not_directly_affected_by_outcome_gives_testimony_in_court_through_witness_depositions_to_support_litigant_must_be_an_adult_male_citizen_or_metic_can_be_prosecuted_for_dishonesty">
+        <otv:conceptName>&lt;Legal_Participants participates in suit but is not directly affected by outcome gives testimony in court through witness depositions to support litigant must be an adult male citizen or metic can be prosecuted for dishonesty&gt;</otv:conceptName>
+        <otv:isA rdf:resource="#Legal_Participants"/>
+        <otv:ownDifference rdf:resource="#who_participates_in_suit_but_is_not_directly_affected_by_outcome"/>
+        <otv:ownDifference rdf:resource="#gives_testimony_in_court_through_witness_depositions_to_support_litigant"/>
+        <otv:ownDifference rdf:resource="#must_be_an_adult_male_citizen_or_metic"/>
+        <otv:ownDifference rdf:resource="#can_be_prosecuted_for_dishonesty"/>
+        <otv:difference rdf:resource="#can_be_prosecuted_for_dishonesty"/>
+        <otv:difference rdf:resource="#must_be_an_adult_male_citizen_or_metic"/>
+        <otv:difference rdf:resource="#gives_testimony_in_court_through_witness_depositions_to_support_litigant"/>
+        <otv:difference rdf:resource="#who_participates_in_suit_but_is_not_directly_affected_by_outcome"/>
+        <otv:denotedByTerm rdf:resource="#witness_en"/>
+        <otv:denotedByTerm rdf:resource="#μάρτυς_grc"/>
+    </otv:Concept>
+
+    <otv:Concept rdf:about="#Legal_Participants">
+        <otv:conceptName>&lt;Legal_Participants&gt;</otv:conceptName>
+        <otv:denotedByTerm rdf:resource="#legal_participant_en"/>
+        <otv:denotedByTerm rdf:resource="#legal_participant_grc"/>
+    </otv:Concept>
+
+    <otv:Concept rdf:about="#Legal_Participants_is_able_to_win_or_lose_legal_suit_has_lawsuit_initiated_against_by_other_can_be_any_gender_or_citizenship_status_receives_a_punishment_if_convicted">
+        <otv:conceptName>&lt;Legal_Participants is able to win or lose legal suit has lawsuit initiated against by other can be any gender or citizenship status receives a punishment if convicted&gt;</otv:conceptName>
+        <otv:isA rdf:resource="#Legal_Participants_is_able_to_win_or_lose_legal_suit"/>
+        <otv:ownDifference rdf:resource="#who_has_lawsuit_initiated_against_by_other"/>
+        <otv:ownDifference rdf:resource="#can_be_any_gender_or_citizenship_status"/>
+        <otv:ownDifference rdf:resource="#receives_a_punishment_if_convicted"/>
+        <otv:inheritedDifference rdf:resource="#who_is_able_to_win_or_lose_legal_suit"/>
+        <otv:difference rdf:resource="#receives_a_punishment_if_convicted"/>
+        <otv:difference rdf:resource="#can_be_any_gender_or_citizenship_status"/>
+        <otv:difference rdf:resource="#who_has_lawsuit_initiated_against_by_other"/>
+        <otv:difference rdf:resource="#who_is_able_to_win_or_lose_legal_suit"/>
+        <otv:denotedByTerm rdf:resource="#defendant_en"/>
+        <otv:denotedByTerm rdf:resource="#φεύγων_grc"/>
+    </otv:Concept>
+
+    <otv:Concept rdf:about="#Legal_Participants_participates_in_suit_but_is_not_directly_affected_by_outcome_delivers_supporting_speeches_for_litigant_must_be_an_adult_male_citizen">
+        <otv:conceptName>&lt;Legal_Participants participates in suit but is not directly affected by outcome delivers supporting speeches for litigant must be an adult male citizen&gt;</otv:conceptName>
+        <otv:isA rdf:resource="#Legal_Participants"/>
+        <otv:ownDifference rdf:resource="#who_participates_in_suit_but_is_not_directly_affected_by_outcome"/>
+        <otv:ownDifference rdf:resource="#delivers_supporting_speeches_for_litigant"/>
+        <otv:ownDifference rdf:resource="#must_be_an_adult_male_citizen"/>
+        <otv:difference rdf:resource="#must_be_an_adult_male_citizen"/>
+        <otv:difference rdf:resource="#delivers_supporting_speeches_for_litigant"/>
+        <otv:difference rdf:resource="#who_participates_in_suit_but_is_not_directly_affected_by_outcome"/>
+        <otv:denotedByTerm rdf:resource="#synegoros_en"/>
+        <otv:denotedByTerm rdf:resource="#advocate_en"/>
+        <otv:denotedByTerm rdf:resource="#συνήγορος_grc"/>
+    </otv:Concept>
+
+    <otv:Concept rdf:about="#Legal_Participants_is_able_to_win_or_lose_legal_suit_makes_a_competing_claim_for_an_inheritance_must_be_an_adult_male_citizen_loses_deposit_if_decision_is_unfavorable">
+        <otv:conceptName>&lt;Legal_Participants is able to win or lose legal suit makes a competing claim for an inheritance must be an adult male citizen loses deposit if decision is unfavorable&gt;</otv:conceptName>
+        <otv:isA rdf:resource="#Legal_Participants_is_able_to_win_or_lose_legal_suit"/>
+        <otv:ownDifference rdf:resource="#who_makes_a_competing_claim_for_an_inheritance"/>
+        <otv:ownDifference rdf:resource="#must_be_an_adult_male_citizen"/>
+        <otv:ownDifference rdf:resource="#loses_deposit_if_decision_is_unfavorable"/>
+        <otv:inheritedDifference rdf:resource="#who_is_able_to_win_or_lose_legal_suit"/>
+        <otv:difference rdf:resource="#loses_deposit_if_decision_is_unfavorable"/>
+        <otv:difference rdf:resource="#must_be_an_adult_male_citizen"/>
+        <otv:difference rdf:resource="#who_makes_a_competing_claim_for_an_inheritance"/>
+        <otv:difference rdf:resource="#who_is_able_to_win_or_lose_legal_suit"/>
+        <otv:denotedByTerm rdf:resource="#claimant_en"/>
+        <otv:denotedByTerm rdf:resource="#ἀμφισβητῶν_grc"/>
+    </otv:Concept>
+
+	<!--  OTV Terms -->
+
+    <otv:Term rdf:about="#summons-witness_en">
+        <rdfs:label xml:lang="en">summons-witness</rdfs:label>
+        <otv:termName>summons-witness</otv:termName>
+        <otv:language>en</otv:language>
+        <otv:denotedConcept rdf:resource="#Legal_Participants_participates_in_suit_but_is_not_directly_affected_by_outcome_witnesses_the_plaintiff_summoning_the_defendant_must_be_an_adult_male_citizen_can_be_prosecuted_for_dishonesty"/>
+        <otv:termStatus>preferred</otv:termStatus>
+        <otv:partOfSpeech>none</otv:partOfSpeech>
+        <otv:gender>none</otv:gender>
+        <otv:termDefinition>Legal participant who participates in suit but is not directly affected by outcome, witnesses the plaintiff summoning the defendant, must be an adult male citizen, can be prosecuted for dishonesty.</otv:termDefinition>
+        <skos:definition xml:lang="en">Legal participant who participates in suit but is not directly affected by outcome, witnesses the plaintiff summoning the defendant, must be an adult male citizen, can be prosecuted for dishonesty.</skos:definition>
+    </otv:Term>
+
+    <otv:Term rdf:about="#synegoros_en">
+        <rdfs:label xml:lang="en">synegoros</rdfs:label>
+        <otv:termName>synegoros</otv:termName>
+        <otv:language>en</otv:language>
+        <otv:denotedConcept rdf:resource="#Legal_Participants_participates_in_suit_but_is_not_directly_affected_by_outcome_delivers_supporting_speeches_for_litigant_must_be_an_adult_male_citizen"/>
+        <otv:termStatus>alternative</otv:termStatus>
+        <otv:partOfSpeech>none</otv:partOfSpeech>
+        <otv:gender>none</otv:gender>
+        <otv:termDefinition>Legal participant who participates in suit but is not directly affected by outcome, delivers supporting speeches for litigant, must be an adult male citizen.</otv:termDefinition>
+        <skos:definition xml:lang="en">Legal participant who participates in suit but is not directly affected by outcome, delivers supporting speeches for litigant, must be an adult male citizen.</skos:definition>
+    </otv:Term>
+
+    <otv:Term rdf:about="#claimant_en">
+        <rdfs:label xml:lang="en">claimant</rdfs:label>
+        <otv:termName>claimant</otv:termName>
+        <otv:language>en</otv:language>
+        <otv:denotedConcept rdf:resource="#Legal_Participants_is_able_to_win_or_lose_legal_suit_makes_a_competing_claim_for_an_inheritance_must_be_an_adult_male_citizen_loses_deposit_if_decision_is_unfavorable"/>
+        <otv:termStatus>preferred</otv:termStatus>
+        <otv:partOfSpeech>none</otv:partOfSpeech>
+        <otv:gender>none</otv:gender>
+        <otv:termDefinition>Litigant who makes a competing claim for an inheritance, must be an adult male citizen, loses deposit if decision is unfavorable.</otv:termDefinition>
+        <skos:definition xml:lang="en">Litigant who makes a competing claim for an inheritance, must be an adult male citizen, loses deposit if decision is unfavorable.</skos:definition>
+    </otv:Term>
+
+    <otv:Term rdf:about="#defendant_en">
+        <rdfs:label xml:lang="en">defendant</rdfs:label>
+        <otv:termName>defendant</otv:termName>
+        <otv:language>en</otv:language>
+        <otv:denotedConcept rdf:resource="#Legal_Participants_is_able_to_win_or_lose_legal_suit_has_lawsuit_initiated_against_by_other_can_be_any_gender_or_citizenship_status_receives_a_punishment_if_convicted"/>
+        <otv:termStatus>preferred</otv:termStatus>
+        <otv:partOfSpeech>none</otv:partOfSpeech>
+        <otv:gender>none</otv:gender>
+        <otv:termDefinition>Litigant who has lawsuit initiated against by other, can be any gender or citizenship status, receives a punishment if convicted.</otv:termDefinition>
+        <skos:definition xml:lang="en">Litigant who has lawsuit initiated against by other, can be any gender or citizenship status, receives a punishment if convicted.</skos:definition>
+    </otv:Term>
+
+    <otv:Term rdf:about="#witness_en">
+        <rdfs:label xml:lang="en">witness</rdfs:label>
+        <otv:termName>witness</otv:termName>
+        <otv:language>en</otv:language>
+        <otv:denotedConcept rdf:resource="#Legal_Participants_participates_in_suit_but_is_not_directly_affected_by_outcome_gives_testimony_in_court_through_witness_depositions_to_support_litigant_must_be_an_adult_male_citizen_or_metic_can_be_prosecuted_for_dishonesty"/>
+        <otv:termStatus>preferred</otv:termStatus>
+        <otv:partOfSpeech>none</otv:partOfSpeech>
+        <otv:gender>none</otv:gender>
+        <otv:termDefinition>Legal participant who participates in suit but is not directly affected by outcome, gives testimony in court through witness depositions to support litigant, must be an adult male citizen or metic, can be prosecuted for dishonesty.</otv:termDefinition>
+        <skos:definition xml:lang="en">Legal participant who participates in suit but is not directly affected by outcome, gives testimony in court through witness depositions to support litigant, must be an adult male citizen or metic, can be prosecuted for dishonesty.</skos:definition>
+    </otv:Term>
+
+    <otv:Term rdf:about="#legal_participant_en">
+        <rdfs:label xml:lang="en">legal participant</rdfs:label>
+        <otv:termName>legal participant</otv:termName>
+        <otv:language>en</otv:language>
+        <otv:denotedConcept rdf:resource="#Legal_Participants"/>
+        <otv:termStatus>preferred</otv:termStatus>
+        <otv:partOfSpeech>none</otv:partOfSpeech>
+        <otv:gender>none</otv:gender>
+        <otv:termDefinition>.</otv:termDefinition>
+        <skos:definition xml:lang="en">.</skos:definition>
+    </otv:Term>
+
+    <otv:Term rdf:about="#litigant_en">
+        <rdfs:label xml:lang="en">litigant</rdfs:label>
+        <otv:termName>litigant</otv:termName>
+        <otv:language>en</otv:language>
+        <otv:denotedConcept rdf:resource="#Legal_Participants_is_able_to_win_or_lose_legal_suit"/>
+        <otv:termStatus>preferred</otv:termStatus>
+        <otv:partOfSpeech>none</otv:partOfSpeech>
+        <otv:gender>none</otv:gender>
+        <otv:termDefinition>Legal participant who is able to win or lose legal suit.</otv:termDefinition>
+        <skos:definition xml:lang="en">Legal participant who is able to win or lose legal suit.</skos:definition>
+    </otv:Term>
+
+    <otv:Term rdf:about="#plaintiff_en">
+        <rdfs:label xml:lang="en">plaintiff</rdfs:label>
+        <otv:termName>plaintiff</otv:termName>
+        <otv:language>en</otv:language>
+        <otv:denotedConcept rdf:resource="#Legal_Participants_is_able_to_win_or_lose_legal_suit_initiates_lawsuit_against_another_must_be_an_adult_male_citizen_or_metic_receives_a_monetary_penalty_if_prosecution_fails"/>
+        <otv:termStatus>preferred</otv:termStatus>
+        <otv:partOfSpeech>none</otv:partOfSpeech>
+        <otv:gender>none</otv:gender>
+        <otv:termDefinition>Litigant who initiates lawsuit against another, must be an adult male citizen or metic, receives a monetary penalty if prosecution fails.</otv:termDefinition>
+        <skos:definition xml:lang="en">Litigant who initiates lawsuit against another, must be an adult male citizen or metic, receives a monetary penalty if prosecution fails.</skos:definition>
+    </otv:Term>
+
+    <otv:Term rdf:about="#advocate_en">
+        <rdfs:label xml:lang="en">advocate</rdfs:label>
+        <otv:termName>advocate</otv:termName>
+        <otv:language>en</otv:language>
+        <otv:denotedConcept rdf:resource="#Legal_Participants_participates_in_suit_but_is_not_directly_affected_by_outcome_delivers_supporting_speeches_for_litigant_must_be_an_adult_male_citizen"/>
+        <otv:termStatus>preferred</otv:termStatus>
+        <otv:partOfSpeech>none</otv:partOfSpeech>
+        <otv:gender>none</otv:gender>
+        <otv:termDefinition>Legal participant who participates in suit but is not directly affected by outcome, delivers supporting speeches for litigant, must be an adult male citizen.</otv:termDefinition>
+        <skos:definition xml:lang="en">Legal participant who participates in suit but is not directly affected by outcome, delivers supporting speeches for litigant, must be an adult male citizen.</skos:definition>
+    </otv:Term>
+
+    <otv:Term rdf:about="#prosecutor_en">
+        <rdfs:label xml:lang="en">prosecutor</rdfs:label>
+        <otv:termName>prosecutor</otv:termName>
+        <otv:language>en</otv:language>
+        <otv:denotedConcept rdf:resource="#Legal_Participants_is_able_to_win_or_lose_legal_suit_initiates_lawsuit_against_another_must_be_an_adult_male_citizen_or_metic_receives_a_monetary_penalty_if_prosecution_fails"/>
+        <otv:termStatus>alternative</otv:termStatus>
+        <otv:partOfSpeech>none</otv:partOfSpeech>
+        <otv:gender>none</otv:gender>
+        <otv:termDefinition>Litigant who initiates lawsuit against another, must be an adult male citizen or metic, receives a monetary penalty if prosecution fails.</otv:termDefinition>
+        <skos:definition xml:lang="en">Litigant who initiates lawsuit against another, must be an adult male citizen or metic, receives a monetary penalty if prosecution fails.</skos:definition>
+    </otv:Term>
+
+    <otv:Term rdf:about="#κλητήρ_grc">
+        <rdfs:label xml:lang="grc">κλητήρ</rdfs:label>
+        <otv:termName>κλητήρ</otv:termName>
+        <otv:language>grc</otv:language>
+        <otv:denotedConcept rdf:resource="#Legal_Participants_participates_in_suit_but_is_not_directly_affected_by_outcome_witnesses_the_plaintiff_summoning_the_defendant_must_be_an_adult_male_citizen_can_be_prosecuted_for_dishonesty"/>
+        <otv:termStatus>preferred</otv:termStatus>
+        <otv:partOfSpeech>none</otv:partOfSpeech>
+        <otv:gender>none</otv:gender>
+        <otv:termDefinition>Legal participant who participates in suit but is not directly affected by outcome, witnesses the plaintiff summoning the defendant, must be an adult male citizen, can be prosecuted for dishonesty.</otv:termDefinition>
+        <skos:definition xml:lang="grc">Legal participant who participates in suit but is not directly affected by outcome, witnesses the plaintiff summoning the defendant, must be an adult male citizen, can be prosecuted for dishonesty.</skos:definition>
+    </otv:Term>
+
+    <otv:Term rdf:about="#legal_participant_grc">
+        <rdfs:label xml:lang="grc">legal participant</rdfs:label>
+        <otv:termName>legal participant</otv:termName>
+        <otv:language>grc</otv:language>
+        <otv:denotedConcept rdf:resource="#Legal_Participants"/>
+        <otv:termStatus>preferred</otv:termStatus>
+        <otv:partOfSpeech>none</otv:partOfSpeech>
+        <otv:gender>none</otv:gender>
+        <otv:termDefinition>.</otv:termDefinition>
+        <skos:definition xml:lang="grc">.</skos:definition>
+    </otv:Term>
+
+    <otv:Term rdf:about="#ἀμφισβητῶν_grc">
+        <rdfs:label xml:lang="grc">ἀμφισβητῶν</rdfs:label>
+        <otv:termName>ἀμφισβητῶν</otv:termName>
+        <otv:language>grc</otv:language>
+        <otv:denotedConcept rdf:resource="#Legal_Participants_is_able_to_win_or_lose_legal_suit_makes_a_competing_claim_for_an_inheritance_must_be_an_adult_male_citizen_loses_deposit_if_decision_is_unfavorable"/>
+        <otv:termStatus>preferred</otv:termStatus>
+        <otv:partOfSpeech>none</otv:partOfSpeech>
+        <otv:gender>none</otv:gender>
+        <otv:termDefinition>ἀντίδικος who makes a competing claim for an inheritance, must be an adult male citizen, loses deposit if decision is unfavorable.</otv:termDefinition>
+        <skos:definition xml:lang="grc">ἀντίδικος who makes a competing claim for an inheritance, must be an adult male citizen, loses deposit if decision is unfavorable.</skos:definition>
+        <otv:context xml:lang="grc">"οὐ γὰρ δήπου συκοφαντεῖν γε βουλόμενος ἀπέγραψα μὲν ἂν πένθ᾽ ἡμιμναίων ἄξια ἀνδράποδα, ὡς αὐτὸς ὁ ἀμφισβητῶν τετίμηται αὐτά, ἐκινδύνευον δ᾽ ἂν περί τε χιλίων δραχμῶν καὶ τοῦ μηδέποτε μηδένα αὖθις ὑπὲρ ἐμαυτοῦ γράψασθαι:" (Dem. 53.1)</otv:context>
+    </otv:Term>
+
+    <otv:Term rdf:about="#διώκων_grc">
+        <rdfs:label xml:lang="grc">διώκων</rdfs:label>
+        <otv:termName>διώκων</otv:termName>
+        <otv:language>grc</otv:language>
+        <otv:denotedConcept rdf:resource="#Legal_Participants_is_able_to_win_or_lose_legal_suit_initiates_lawsuit_against_another_must_be_an_adult_male_citizen_or_metic_receives_a_monetary_penalty_if_prosecution_fails"/>
+        <otv:termStatus>preferred</otv:termStatus>
+        <otv:partOfSpeech>none</otv:partOfSpeech>
+        <otv:gender>none</otv:gender>
+        <otv:termDefinition>ἀντίδικος who initiates lawsuit against another, must be an adult male citizen or metic, receives a monetary penalty if prosecution fails.</otv:termDefinition>
+        <skos:definition xml:lang="grc">ἀντίδικος who initiates lawsuit against another, must be an adult male citizen or metic, receives a monetary penalty if prosecution fails.</skos:definition>
+    </otv:Term>
+
+    <otv:Term rdf:about="#μάρτυς_grc">
+        <rdfs:label xml:lang="grc">μάρτυς</rdfs:label>
+        <otv:termName>μάρτυς</otv:termName>
+        <otv:language>grc</otv:language>
+        <otv:denotedConcept rdf:resource="#Legal_Participants_participates_in_suit_but_is_not_directly_affected_by_outcome_gives_testimony_in_court_through_witness_depositions_to_support_litigant_must_be_an_adult_male_citizen_or_metic_can_be_prosecuted_for_dishonesty"/>
+        <otv:termStatus>preferred</otv:termStatus>
+        <otv:partOfSpeech>none</otv:partOfSpeech>
+        <otv:gender>none</otv:gender>
+        <otv:termDefinition>Legal participant who participates in suit but is not directly affected by outcome, gives testimony in court through witness depositions to support litigant, must be an adult male citizen or metic, can be prosecuted for dishonesty.</otv:termDefinition>
+        <skos:definition xml:lang="grc">Legal participant who participates in suit but is not directly affected by outcome, gives testimony in court through witness depositions to support litigant, must be an adult male citizen or metic, can be prosecuted for dishonesty.</skos:definition>
+    </otv:Term>
+
+    <otv:Term rdf:about="#ἀντίδικος_grc">
+        <rdfs:label xml:lang="grc">ἀντίδικος</rdfs:label>
+        <otv:termName>ἀντίδικος</otv:termName>
+        <otv:language>grc</otv:language>
+        <otv:denotedConcept rdf:resource="#Legal_Participants_is_able_to_win_or_lose_legal_suit"/>
+        <otv:termStatus>preferred</otv:termStatus>
+        <otv:partOfSpeech>none</otv:partOfSpeech>
+        <otv:gender>none</otv:gender>
+        <otv:termDefinition>Legal participant who is able to win or lose legal suit.</otv:termDefinition>
+        <skos:definition xml:lang="grc">Legal participant who is able to win or lose legal suit.</skos:definition>
+    </otv:Term>
+
+    <otv:Term rdf:about="#συνήγορος_grc">
+        <rdfs:label xml:lang="grc">συνήγορος</rdfs:label>
+        <otv:termName>συνήγορος</otv:termName>
+        <otv:language>grc</otv:language>
+        <otv:denotedConcept rdf:resource="#Legal_Participants_participates_in_suit_but_is_not_directly_affected_by_outcome_delivers_supporting_speeches_for_litigant_must_be_an_adult_male_citizen"/>
+        <otv:termStatus>preferred</otv:termStatus>
+        <otv:partOfSpeech>none</otv:partOfSpeech>
+        <otv:gender>none</otv:gender>
+        <otv:termDefinition>Legal participant who participates in suit but is not directly affected by outcome, delivers supporting speeches for litigant, must be an adult male citizen.</otv:termDefinition>
+        <skos:definition xml:lang="grc">Legal participant who participates in suit but is not directly affected by outcome, delivers supporting speeches for litigant, must be an adult male citizen.</skos:definition>
+    </otv:Term>
+
+    <otv:Term rdf:about="#φεύγων_grc">
+        <rdfs:label xml:lang="grc">φεύγων</rdfs:label>
+        <otv:termName>φεύγων</otv:termName>
+        <otv:language>grc</otv:language>
+        <otv:denotedConcept rdf:resource="#Legal_Participants_is_able_to_win_or_lose_legal_suit_has_lawsuit_initiated_against_by_other_can_be_any_gender_or_citizenship_status_receives_a_punishment_if_convicted"/>
+        <otv:termStatus>preferred</otv:termStatus>
+        <otv:partOfSpeech>none</otv:partOfSpeech>
+        <otv:gender>none</otv:gender>
+        <otv:termDefinition>ἀντίδικος who has lawsuit initiated against by other, can be any gender or citizenship status, receives a punishment if convicted.</otv:termDefinition>
+        <skos:definition xml:lang="grc">ἀντίδικος who has lawsuit initiated against by other, can be any gender or citizenship status, receives a punishment if convicted.</skos:definition>
+    </otv:Term>
+
+	<!--  OTV Proper Names -->
+
+	<!--  OTV Individuals -->
+
+</rdf:RDF>
