@@ -6,4 +6,6 @@ exclude: true
 ---
 This website is maintained by Rachel Milio.
 
-Beta Version 1.0 was published on March 26th, 2026.
+Version 1.0 was published on April 13th, 2026.
+
+Version 1.1, which updated the order of the header menu and the homepage layout, was published on May 11th, 2026.

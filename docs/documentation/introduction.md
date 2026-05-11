@@ -2,6 +2,7 @@
 title: Documentation
 layout: documentation
 permalink: /docs
+weight: 1
 ---
 
 Welcome to the documentation for the Attic Oratory Database. 
