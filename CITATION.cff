@@ -1,0 +1,11 @@
+cff-version: 1.1.1
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Milio"
+  given-names: "Rachel"
+  orcid: "https://orcid.org/0009-0000-0420-4711"
+title: "Attic Oratory Database Code"
+version: 1.1.1
+doi: 10.5281/zenodo.20727411
+date-released: 2026-06-17
+url: "https://github.com/rachelmilio/rachelmilio.github.io"
